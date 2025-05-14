@@ -1,0 +1,26 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter_Reg_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter_Reg.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter_Adder_FullAdder.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter_Adder.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter_Reg_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter_Reg.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter_Adder_FullAdder.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter_Adder.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/SerialLCDController.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/SerialControl.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/LCD_Dispatcher.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/Compare10.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/Compare9.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/LCD_SerialReceiver_ShiftRegister.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/LCD_SerialReceiver.vhd}
+

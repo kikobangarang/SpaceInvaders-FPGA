@@ -1,0 +1,66 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do OutputRegister_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Output Buffer/Output Register/OutputRegister.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:08:02 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Output Buffer/Output Register/OutputRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OutputRegister
+# -- Compiling architecture behavioral of OutputRegister
+# End time: 21:08:02 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Output Buffer/Output Register/outputregister_ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:08:02 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Output Buffer/Output Register/outputregister_ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OutputRegister_FFD
+# -- Compiling architecture behavioral of OutputRegister_FFD
+# End time: 21:08:02 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Output Buffer/Output Register/OutputRegister_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:08:17 on May 18,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Output Buffer/Output Register/OutputRegister_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OutputRegister_tb
+# -- Compiling architecture behavioral of OutputRegister_tb
+# ** Warning: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Output Buffer/Output Register/OutputRegister_tb.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 21:08:17 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.outputregister_tb
+# vsim work.outputregister_tb 
+# Start time: 21:08:20 on May 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.outputregister_tb(behavioral)
+# Loading work.outputregister(behavioral)
+# Loading work.outputregister_ffd(behavioral)
+add wave -position insertpoint  \
+sim:/outputregister_tb/D_tb \
+sim:/outputregister_tb/Q_tb \
+sim:/outputregister_tb/clk_tb \
+sim:/outputregister_tb/E_tb \
+sim:/outputregister_tb/Reset_tb
+run
+# End time: 21:12:07 on May 18,2024, Elapsed time: 0:03:47
+# Errors: 0, Warnings: 0

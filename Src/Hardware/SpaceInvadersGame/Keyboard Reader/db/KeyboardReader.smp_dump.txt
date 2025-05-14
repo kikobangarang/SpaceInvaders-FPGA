@@ -1,0 +1,15 @@
+
+State Machine - |KeyboardReader|RingBuffer:RingBuffer_U0|RingBufferControl:RingBufferControl_U0|CurrentState
+Name CurrentState.STATE_101 CurrentState.STATE_100 CurrentState.STATE_011 CurrentState.STATE_010 CurrentState.STATE_001 CurrentState.STATE_000 
+CurrentState.STATE_000 0 0 0 0 0 0 
+CurrentState.STATE_001 0 0 0 0 1 1 
+CurrentState.STATE_010 0 0 0 1 0 1 
+CurrentState.STATE_011 0 0 1 0 0 1 
+CurrentState.STATE_100 0 1 0 0 0 1 
+CurrentState.STATE_101 1 0 0 0 0 1 
+
+State Machine - |KeyboardReader|KeyDecode:KeyDecode_U0|KeyControl:KeyControl_Unit0|CurrentState
+Name CurrentState.STATE_WAITING CurrentState.STATE_SEARCHING CurrentState.STATE_SCANNING 
+CurrentState.STATE_SCANNING 0 0 0 
+CurrentState.STATE_SEARCHING 0 1 1 
+CurrentState.STATE_WAITING 1 0 1 

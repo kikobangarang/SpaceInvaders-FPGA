@@ -1,0 +1,54 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do Compare8_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Compare8/Compare8.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:02 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Compare8/Compare8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Compare8
+# -- Compiling architecture behavioral of Compare8
+# End time: 18:53:02 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Compare8/Compare8_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:24 on May 18,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Compare8/Compare8_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Compare8_tb
+# -- Compiling architecture behavioral of Compare8_tb
+# End time: 18:53:24 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.compare8_tb
+# vsim work.compare8_tb 
+# Start time: 18:53:27 on May 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.compare8_tb(behavioral)
+# Loading work.compare8(behavioral)
+add wave -position insertpoint  \
+sim:/compare8_tb/Data_tb \
+sim:/compare8_tb/R_tb \
+sim:/compare8_tb/MCLK_PERIOD \
+sim:/compare8_tb/MCLK_HALF_PERIOD
+run
+run
+run
+# End time: 18:53:51 on May 18,2024, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0

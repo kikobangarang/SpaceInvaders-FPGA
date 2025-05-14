@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/MemoryAddressControl.vhd}
+vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont.vhd}
+vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_adder.vhd}
+vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_fulladder.vhd}
+vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_reg.vhd}
+vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_ffd.vhd}
+vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_mux.vhd}
+vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_compare.vhd}
+

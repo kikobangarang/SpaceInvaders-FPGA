@@ -1,0 +1,19 @@
+|SerialControl
+Reset => CurrentState~3.DATAIN
+clk => CurrentState~1.DATAIN
+enRX => GenerateNextState.IN0
+accept => Selector0.IN3
+accept => GenerateNextState.IN1
+accept => Selector3.IN1
+dFlag => Selector2.IN3
+dFlag => Selector1.IN2
+pFlag => NextState.OUTPUTSELECT
+pFlag => NextState.OUTPUTSELECT
+pFlag => Selector2.IN1
+RXerror => NextState.DATAB
+RXerror => NextState.DATAB
+wr << wr.DB_MAX_OUTPUT_PORT_TYPE
+init << init.DB_MAX_OUTPUT_PORT_TYPE
+DXval << DXval.DB_MAX_OUTPUT_PORT_TYPE
+
+

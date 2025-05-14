@@ -1,0 +1,132 @@
+|Counter
+clear => Counter_Reg:Counter_Reg_U0.Reset
+clk => Counter_Reg:Counter_Reg_U0.CLK
+Q[0] << Counter_Reg:Counter_Reg_U0.Q[0]
+Q[1] << Counter_Reg:Counter_Reg_U0.Q[1]
+Q[2] << Counter_Reg:Counter_Reg_U0.Q[2]
+Q[3] << Counter_Reg:Counter_Reg_U0.Q[3]
+
+
+|Counter|Counter_Adder:Counter_Adder_U0
+A[0] => Counter_Adder_FullAdder:Counter_Adder_FullAdder_U0.A
+A[1] => Counter_Adder_FullAdder:Counter_Adder_FullAdder_U1.A
+A[2] => Counter_Adder_FullAdder:Counter_Adder_FullAdder_U2.A
+A[3] => Counter_Adder_FullAdder:Counter_Adder_FullAdder_U3.A
+B[0] => Counter_Adder_FullAdder:Counter_Adder_FullAdder_U0.B
+B[1] => Counter_Adder_FullAdder:Counter_Adder_FullAdder_U1.B
+B[2] => Counter_Adder_FullAdder:Counter_Adder_FullAdder_U2.B
+B[3] => Counter_Adder_FullAdder:Counter_Adder_FullAdder_U3.B
+CYi => Counter_Adder_FullAdder:Counter_Adder_FullAdder_U0.CYi
+S[0] <= Counter_Adder_FullAdder:Counter_Adder_FullAdder_U0.R
+S[1] <= Counter_Adder_FullAdder:Counter_Adder_FullAdder_U1.R
+S[2] <= Counter_Adder_FullAdder:Counter_Adder_FullAdder_U2.R
+S[3] <= Counter_Adder_FullAdder:Counter_Adder_FullAdder_U3.R
+
+
+|Counter|Counter_Adder:Counter_Adder_U0|Counter_Adder_FullAdder:Counter_Adder_FullAdder_U0
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Counter|Counter_Adder:Counter_Adder_U0|Counter_Adder_FullAdder:Counter_Adder_FullAdder_U1
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Counter|Counter_Adder:Counter_Adder_U0|Counter_Adder_FullAdder:Counter_Adder_FullAdder_U2
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Counter|Counter_Adder:Counter_Adder_U0|Counter_Adder_FullAdder:Counter_Adder_FullAdder_U3
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Counter|Counter_Reg:Counter_Reg_U0
+D[0] => Counter_Reg_FFD:Counter_Reg_FFD_U3.D
+D[1] => Counter_Reg_FFD:Counter_Reg_FFD_U2.D
+D[2] => Counter_Reg_FFD:Counter_Reg_FFD_U1.D
+D[3] => Counter_Reg_FFD:Counter_Reg_FFD_U0.D
+clk => Counter_Reg_FFD:Counter_Reg_FFD_U0.clk
+clk => Counter_Reg_FFD:Counter_Reg_FFD_U1.clk
+clk => Counter_Reg_FFD:Counter_Reg_FFD_U2.clk
+clk => Counter_Reg_FFD:Counter_Reg_FFD_U3.clk
+E => Counter_Reg_FFD:Counter_Reg_FFD_U0.EN
+E => Counter_Reg_FFD:Counter_Reg_FFD_U1.EN
+E => Counter_Reg_FFD:Counter_Reg_FFD_U2.EN
+E => Counter_Reg_FFD:Counter_Reg_FFD_U3.EN
+Reset => Counter_Reg_FFD:Counter_Reg_FFD_U0.Reset
+Reset => Counter_Reg_FFD:Counter_Reg_FFD_U1.Reset
+Reset => Counter_Reg_FFD:Counter_Reg_FFD_U2.Reset
+Reset => Counter_Reg_FFD:Counter_Reg_FFD_U3.Reset
+Q[0] <= Counter_Reg_FFD:Counter_Reg_FFD_U3.Q
+Q[1] <= Counter_Reg_FFD:Counter_Reg_FFD_U2.Q
+Q[2] <= Counter_Reg_FFD:Counter_Reg_FFD_U1.Q
+Q[3] <= Counter_Reg_FFD:Counter_Reg_FFD_U0.Q
+
+
+|Counter|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Counter|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Counter|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Counter|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U3
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

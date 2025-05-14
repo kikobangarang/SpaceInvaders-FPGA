@@ -1,0 +1,62 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity SLCDC is
+port(
+	SDX, SCLK, SS, Reset, CLK: in std_logic;
+	Dout: out std_logic_vector(8 downto 0);
+	WrL: out std_logic
+);
+end SLCDC;
+
+architecture behavioral of SLCDC is
+
+component SerialReceiver is 
+port(
+	SDX, SCLK, SS, accept, CLK, Reset: in std_logic;
+	D: out std_logic_vector(8 downto 0);
+	DXval: out std_logic
+);
+end component;
+
+component LCDDispatcher is
+port(
+	Din: in std_logic_vector(8 downto 0);
+	Dval, clk, Reset: in std_logic;
+	WrL, done: out std_logic;
+	Dout: out std_logic_vector(8 downto 0)
+);
+end component;
+
+
+
+signal term0: std_logic_vector(8 downto 0);
+signal term1, term2: std_logic;
+
+
+begin
+
+SerialReceiver_U0: SerialReceiver port map(
+	SDX => SDX, 
+	SCLK => SCLK, 
+	SS => SS, 
+	accept => term2, 
+	Reset => Reset,
+	CLK => CLK,
+	D => term0,
+	DXval => term1
+);
+
+
+LCDDispatcher_U0: LCDDispatcher port map(
+	Din => term0,
+	Dval => term1,
+	clk => CLK,
+	Reset => Reset,
+	WrL => WrL,
+	done => term2,
+	Dout => Dout
+);
+
+
+end behavioral;

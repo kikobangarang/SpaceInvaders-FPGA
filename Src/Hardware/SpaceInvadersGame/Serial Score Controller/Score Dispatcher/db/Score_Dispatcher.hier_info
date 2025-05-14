@@ -1,0 +1,24 @@
+|Score_Dispatcher
+Din[0] => Dout[0]$latch.DATAIN
+Din[1] => Dout[1]$latch.DATAIN
+Din[2] => Dout[2]$latch.DATAIN
+Din[3] => Dout[3]$latch.DATAIN
+Din[4] => Dout[4]$latch.DATAIN
+Din[5] => Dout[5]$latch.DATAIN
+Din[6] => Dout[6]$latch.DATAIN
+Dval => NextState.STATE_DATA.DATAB
+Dval => Selector1.IN3
+Dval => Selector0.IN1
+clk => CurrentState~1.DATAIN
+Reset => CurrentState~3.DATAIN
+WrD <= WrD.DB_MAX_OUTPUT_PORT_TYPE
+done <= done.DB_MAX_OUTPUT_PORT_TYPE
+Dout[0] <= Dout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Dout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Dout[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Dout[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] <= Dout[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Dout[5] <= Dout[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Dout[6] <= Dout[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

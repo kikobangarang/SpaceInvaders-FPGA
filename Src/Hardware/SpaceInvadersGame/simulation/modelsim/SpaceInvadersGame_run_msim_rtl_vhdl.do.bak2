@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/LCD_Dispatcher.vhd}
+

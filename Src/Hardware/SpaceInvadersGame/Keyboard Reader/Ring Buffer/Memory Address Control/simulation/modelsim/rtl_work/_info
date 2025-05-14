@@ -1,0 +1,380 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/simulation/modelsim
+Emac_compare
+Z1 w1716081035
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 7
+R0
+Z4 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_compare.vhd
+Z5 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_compare.vhd
+l0
+L4 1
+VIR_YdMUolJSV63e0G<^LB1
+!s100 1;JoJ1@z@oFS=K;LDhe<30
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1716082885
+!i10b 1
+Z8 !s108 1716082885.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_compare.vhd|
+Z10 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_compare.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 11 mac_compare 0 22 IR_YdMUolJSV63e0G<^LB1
+!i122 7
+l13
+L11 7
+VZU0fdOG0NJG`;dP9D1LJ32
+!s100 iP=M2WPBZb>F4GO8o9>JQ2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emac_cont
+Z13 w1715874585
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont.vhd
+Z15 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont.vhd
+l0
+L4 1
+VU95:>eN2`V>FTEinz1TMI2
+!s100 O]oR19YFA:e8?gUSN;34L2
+R6
+31
+Z16 !s110 1716082884
+!i10b 1
+Z17 !s108 1716082884.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont.vhd|
+Z19 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 8 mac_cont 0 22 U95:>eN2`V>FTEinz1TMI2
+!i122 1
+l32
+L11 44
+VdfRULWk1WXcYj4?abg:gL1
+!s100 Rz:EzBn^GSAZmhi:]4f?F2
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Emac_cont_adder
+Z20 w1715874196
+R2
+R3
+!i122 2
+R0
+Z21 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_adder.vhd
+Z22 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_adder.vhd
+l0
+L4 1
+VMg61j6QiWf6hPTHoEUW7H3
+!s100 S]2bJT8diXzPZ9N;@R5@90
+R6
+31
+R16
+!i10b 1
+R17
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_adder.vhd|
+Z24 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_adder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 14 mac_cont_adder 0 22 Mg61j6QiWf6hPTHoEUW7H3
+!i122 2
+l26
+L13 40
+V_:I?co:a?;88D9f6F4@Pf3
+!s100 bV?REIRK2F`NJ9Jikazdh3
+R6
+31
+R16
+!i10b 1
+R17
+R23
+R24
+!i113 1
+R11
+R12
+Emac_cont_fulladder
+Z25 w1715873944
+R2
+R3
+!i122 3
+R0
+Z26 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_fulladder.vhd
+Z27 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_fulladder.vhd
+l0
+L4 1
+V_Q95eXb^InJ^LQgFGd>7e0
+!s100 fM]Eb6:`>l52[7aE4ho0a2
+R6
+31
+R16
+!i10b 1
+R17
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_fulladder.vhd|
+Z29 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_fulladder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 18 mac_cont_fulladder 0 22 _Q95eXb^InJ^LQgFGd>7e0
+!i122 3
+l16
+L14 8
+VS;FKf5GSNz<Ei;@hdKdG11
+!s100 @R:dOT:hW;fWdhAH6e4mm2
+R6
+31
+R16
+!i10b 1
+R17
+R28
+R29
+!i113 1
+R11
+R12
+Emac_cont_reg
+Z30 w1715874568
+R2
+R3
+!i122 4
+R0
+Z31 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_reg.vhd
+Z32 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_reg.vhd
+l0
+L4 1
+VBcYjKPNNz1?VB=]JFRk^22
+!s100 IP2iWcD9OKe23MIOj`JjS2
+R6
+31
+R16
+!i10b 1
+R17
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_reg.vhd|
+Z34 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_reg.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 12 mac_cont_reg 0 22 BcYjKPNNz1?VB=]JFRk^22
+!i122 4
+l26
+L14 42
+VQfX<fWa_OkdzK:Fm@f1Wd2
+!s100 2S9emhQVzXINUkS@ddRWJ3
+R6
+31
+R16
+!i10b 1
+R17
+R33
+R34
+!i113 1
+R11
+R12
+Emac_ffd
+Z35 w1715874053
+R2
+R3
+!i122 5
+R0
+Z36 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_ffd.vhd
+Z37 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_ffd.vhd
+l0
+L4 1
+VbhF9ehV=7R6X9nVi1i_Xz1
+!s100 0b4DTGiRG2RBF2fXT[nTc3
+R6
+31
+R16
+!i10b 1
+R17
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_ffd.vhd|
+Z39 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_ffd.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 7 mac_ffd 0 22 bhF9ehV=7R6X9nVi1i_Xz1
+!i122 5
+l17
+L15 9
+VBbaJRnR@E[?T7`oz6BX^R1
+!s100 3KVHL:U=cak@QBD86Yb]72
+R6
+31
+R16
+!i10b 1
+R17
+R38
+R39
+!i113 1
+R11
+R12
+Emac_mux
+Z40 w1715872988
+R2
+R3
+!i122 6
+R0
+Z41 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_mux.vhd
+Z42 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_mux.vhd
+l0
+L4 1
+V]WYBD?d1zDz^zYE5]0CQ40
+!s100 7`GB[6iCB`4h2SN8MfNJZ3
+R6
+31
+R7
+!i10b 1
+R8
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_mux.vhd|
+Z44 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_mux.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 7 mac_mux 0 22 ]WYBD?d1zDz^zYE5]0CQ40
+!i122 6
+l14
+L12 7
+VKiz_GCVP@DX=5RoizI?eY1
+!s100 WZQ]SjQV64Tln79i@a2]32
+R6
+31
+R7
+!i10b 1
+R8
+R43
+R44
+!i113 1
+R11
+R12
+Ememoryaddresscontrol
+Z45 w1715874849
+R2
+R3
+!i122 0
+R0
+Z46 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/MemoryAddressControl.vhd
+Z47 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/MemoryAddressControl.vhd
+l0
+L4 1
+V90`cb:YQF>QZe@QS8MOT<0
+!s100 8kEUD@@YCMk1oFKT@=H>H0
+R6
+31
+R16
+!i10b 1
+R17
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/MemoryAddressControl.vhd|
+Z49 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/MemoryAddressControl.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 20 memoryaddresscontrol 0 22 90`cb:YQF>QZe@QS8MOT<0
+!i122 0
+l48
+L13 77
+VO<NV^h^mb>[>eD:UPB6F:1
+!s100 c:@h=1JHbHT@XFRnm`REF3
+R6
+31
+R16
+!i10b 1
+R17
+R48
+R49
+!i113 1
+R11
+R12
+Ememoryaddresscontrol_tb
+Z50 w1716082784
+R2
+R3
+!i122 8
+R0
+Z51 8C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Memory Address Control/MemmoryAddressControl_tb.vhd
+Z52 FC:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Memory Address Control/MemmoryAddressControl_tb.vhd
+l0
+L4 1
+VM7=SfLVVDLRcNEnAg[1BN2
+!s100 W8L2i7TA=A5bH2hIgGZzh0
+R6
+32
+Z53 !s110 1716082897
+!i10b 1
+Z54 !s108 1716082897.000000
+Z55 !s90 -reportprogress|300|-work|work|C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Memory Address Control/MemmoryAddressControl_tb.vhd|
+!s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Memory Address Control/MemmoryAddressControl_tb.vhd|
+!i113 1
+Z56 o-work work
+R12
+Abehavioral
+R2
+R3
+DEx4 work 23 memoryaddresscontrol_tb 0 22 M7=SfLVVDLRcNEnAg[1BN2
+!i122 8
+l24
+L7 87
+VJ[6Mblo`^^S25YKF_MhPa3
+!s100 LN;kJ;lk<6Xo4F[Fl2PR81
+R6
+32
+R53
+!i10b 1
+R54
+R55
+Z57 !s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Memory Address Control/MemmoryAddressControl_tb.vhd|
+!i113 1
+R56
+R12

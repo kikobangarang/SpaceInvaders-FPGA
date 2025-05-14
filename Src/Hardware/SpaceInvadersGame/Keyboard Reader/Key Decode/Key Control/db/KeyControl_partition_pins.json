@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Kval",
+					"strict" : false
+				},
+				{
+					"name" : "Kscan",
+					"strict" : false
+				},
+				{
+					"name" : "Kpress",
+					"strict" : false
+				},
+				{
+					"name" : "Kack",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

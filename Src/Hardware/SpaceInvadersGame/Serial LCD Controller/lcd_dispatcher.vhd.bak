@@ -1,0 +1,53 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity LCD_Dispatcher is
+port(	
+	Din: in std_logic_vector(8 downto 0);
+	Dval, clk, Reset: in std_logic;
+	WrD, done: out std_logic;
+	Dout: out std_logic_vector(8 downto 0)
+);
+end LCD_Dispatcher;
+
+architecture behavioral of LCD_Dispatcher is
+
+type STATE_TYPE is (STATE_WAITING, STATE_DATA, STATE_ENABLE, STATE_DONE);
+
+
+signal CurrentState, NextState : STATE_TYPE;
+
+begin
+
+-- Flip-Flop's
+CurrentState <= STATE_WAITING when Reset = '1' else NextState when rising_edge(clk);
+
+-- Generate Next State
+GenerateNextState:
+process (CurrentState,Dval, Din)
+	begin
+		case CurrentState is
+			
+			when STATE_WAITING => if (Dval = '1') then
+				NextState <= STATE_DATA;
+				else NextState <= STATE_WAITING;
+				end if;
+				
+			when STATE_DATA => NextState <= STATE_ENABLE;
+		
+			when STATE_ENABLE => NextState <= STATE_DONE;
+			
+			when STATE_DONE => if(Dval = '0') then
+				NextState <= STATE_WAITING;
+				else NextState <= STATE_DONE;
+				end if;
+	end case;
+end process;
+
+--Generate Outputs
+
+Dout <= Din;
+WrD <= '1' when (CurrentState = STATE_ENABLE) else '0';
+Done <= '1' when (CurrentState = STATE_DONE) else '0';
+
+end behavioral;

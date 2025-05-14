@@ -1,0 +1,158 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do MemoryAddressControl_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/MemoryAddressControl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:41:24 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/MemoryAddressControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemoryAddressControl
+# -- Compiling architecture behavioral of MemoryAddressControl
+# End time: 02:41:24 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:41:24 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont
+# -- Compiling architecture behavioral of MAC_Cont
+# End time: 02:41:24 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:41:24 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont_Adder
+# -- Compiling architecture behavioral of MAC_Cont_Adder
+# End time: 02:41:24 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_fulladder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:41:24 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_fulladder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont_FullAdder
+# -- Compiling architecture behavioral of MAC_Cont_FullAdder
+# End time: 02:41:24 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:41:24 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_cont_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont_Reg
+# -- Compiling architecture behavioral of MAC_Cont_Reg
+# End time: 02:41:24 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:41:24 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_FFD
+# -- Compiling architecture behavioral of MAC_FFD
+# End time: 02:41:24 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_mux.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:41:25 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Mux
+# -- Compiling architecture behavioral of MAC_Mux
+# End time: 02:41:25 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_compare.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:41:25 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Memory Address Control/mac_compare.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Compare
+# -- Compiling architecture behavioral of MAC_Compare
+# End time: 02:41:25 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Memory Address Control/MemmoryAddressControl_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:41:37 on May 19,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Memory Address Control/MemmoryAddressControl_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemoryAddressControl_tb
+# -- Compiling architecture behavioral of MemoryAddressControl_tb
+# End time: 02:41:37 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.memoryaddresscontrol_tb
+# vsim work.memoryaddresscontrol_tb 
+# Start time: 02:41:40 on May 19,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.memoryaddresscontrol_tb(behavioral)
+# Loading work.memoryaddresscontrol(behavioral)
+# Loading work.mac_cont(behavioral)
+# Loading work.mac_cont_adder(behavioral)
+# Loading work.mac_cont_fulladder(behavioral)
+# Loading work.mac_cont_reg(behavioral)
+# Loading work.mac_ffd(behavioral)
+# Loading work.mac_mux(behavioral)
+# Loading work.mac_compare(behavioral)
+add wave -position insertpoint  \
+sim:/memoryaddresscontrol_tb/putget_tb \
+sim:/memoryaddresscontrol_tb/incPut_tb \
+sim:/memoryaddresscontrol_tb/incGet_tb \
+sim:/memoryaddresscontrol_tb/Reset_tb \
+sim:/memoryaddresscontrol_tb/clk_tb \
+sim:/memoryaddresscontrol_tb/full_tb \
+sim:/memoryaddresscontrol_tb/empty_tb \
+sim:/memoryaddresscontrol_tb/Address_tb
+add wave -position insertpoint  \
+sim:/memoryaddresscontrol_tb/UUT/MAC_Cont_U0/Q
+add wave -position insertpoint  \
+sim:/memoryaddresscontrol_tb/UUT/MAC_Cont_U1/Q
+run
+run
+run
+add wave -position insertpoint  \
+sim:/memoryaddresscontrol_tb/putget_tb \
+sim:/memoryaddresscontrol_tb/incPut_tb \
+sim:/memoryaddresscontrol_tb/incGet_tb \
+sim:/memoryaddresscontrol_tb/Reset_tb \
+sim:/memoryaddresscontrol_tb/clk_tb \
+sim:/memoryaddresscontrol_tb/full_tb \
+sim:/memoryaddresscontrol_tb/empty_tb \
+sim:/memoryaddresscontrol_tb/Address_tb
+add wave -position insertpoint sim:/memoryaddresscontrol_tb/UUT/MAC_Cont_U0/*
+add wave -position insertpoint  \
+sim:/memoryaddresscontrol_tb/UUT/MAC_Cont_U1/Q
+# End time: 02:57:52 on May 19,2024, Elapsed time: 0:16:12
+# Errors: 0, Warnings: 0

@@ -1,0 +1,55 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Reg3bits is
+port(	
+	D : in std_logic_vector(2 downto 0);
+	CLK : in std_logic;
+	E : in std_logic;
+	Reset : in std_logic;
+	Q : out std_logic_vector(2 downto 0)
+);
+end Reg3bits;
+
+architecture behavioral of Reg3bits is
+
+component FFD port(	
+		CLK : in std_logic;
+		RESET : in STD_LOGIC;
+		SET : in std_logic;
+		D : IN STD_LOGIC;
+		EN : IN STD_LOGIC;
+		Q : out std_logic
+);
+end component;
+
+begin
+
+FFD0: FFD port map(
+		CLK => CLK,
+		RESET => Reset,
+		SET => '0',
+		D => D(2),
+		EN => E,
+		Q => Q(2)
+);
+
+FFD1: FFD port map(
+		CLK => CLK,
+		RESET => Reset,
+		SET => '0',
+		D => D(1),
+		EN => E,
+		Q => Q(1)
+);
+
+FFD2: FFD port map(
+		CLK => CLK,
+		RESET => Reset,
+		SET => '0',
+		D => D(0),
+		EN => E,
+		Q => Q(0)
+);
+
+end behavioral;

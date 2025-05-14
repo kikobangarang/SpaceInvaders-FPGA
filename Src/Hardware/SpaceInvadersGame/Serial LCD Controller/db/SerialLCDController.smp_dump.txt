@@ -1,0 +1,14 @@
+
+State Machine - |SerialLCDController|LCD_Dispatcher:LCDDispatcher_U0|CurrentState
+Name CurrentState.STATE_DONE CurrentState.STATE_ENABLE CurrentState.STATE_DATA CurrentState.STATE_WAITING 
+CurrentState.STATE_WAITING 0 0 0 0 
+CurrentState.STATE_DATA 0 0 1 1 
+CurrentState.STATE_ENABLE 0 1 0 1 
+CurrentState.STATE_DONE 1 0 0 1 
+
+State Machine - |SerialLCDController|LCD_SerialReceiver:LCD_SerialReceiver_U0|SerialControl:SerialControl_U0|CurrentState
+Name CurrentState.STATE_WAITINGACCEPT CurrentState.STATE_ERRORCHECK CurrentState.STATE_WRITING CurrentState.STATE_INIT 
+CurrentState.STATE_INIT 0 0 0 0 
+CurrentState.STATE_WRITING 0 0 1 1 
+CurrentState.STATE_ERRORCHECK 0 1 0 1 
+CurrentState.STATE_WAITINGACCEPT 1 0 0 1 

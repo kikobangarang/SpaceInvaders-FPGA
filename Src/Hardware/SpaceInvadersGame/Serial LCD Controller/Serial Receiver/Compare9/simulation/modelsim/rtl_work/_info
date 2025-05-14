@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Compare9/simulation/modelsim
+Ecompare9
+Z1 w1711541666
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Compare9/Compare9.vhd
+Z5 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Compare9/Compare9.vhd
+l0
+L4 1
+VfgY]^iY:BzAD;SGOW8IFm1
+!s100 A[67L]icj[DDJAd@7=Ngl2
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1716045613
+!i10b 1
+Z8 !s108 1716045613.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Compare9/Compare9.vhd|
+Z10 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Compare9/Compare9.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 8 compare9 0 22 fgY]^iY:BzAD;SGOW8IFm1
+!i122 0
+l13
+L11 7
+VV[Fc>=a5C:[RNcbU2B36F1
+!s100 mbXl:gQAMfYfbRUmVKo]>3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecompare9_tb
+Z13 w1716045682
+R2
+R3
+!i122 3
+R0
+Z14 8C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd
+Z15 FC:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd
+l0
+L4 1
+VHA?gcNLg2Nb@:kM:^9`8l2
+!s100 SVI`fiAOa4a]EzXNb0GlD1
+R6
+32
+Z16 !s110 1716045688
+!i10b 1
+Z17 !s108 1716045688.000000
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd|
+!s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd|
+!i113 1
+Z19 o-work work
+R12
+Abehavioral
+R2
+R3
+DEx4 work 11 compare9_tb 0 22 HA?gcNLg2Nb@:kM:^9`8l2
+!i122 3
+l22
+L7 94
+VafPN=B_9ojOAj5?kc<YXC3
+!s100 ]Y>mm4;0M=HjfOB57Q<F92
+R6
+32
+R16
+!i10b 1
+R17
+R18
+Z20 !s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd|
+!i113 1
+R19
+R12

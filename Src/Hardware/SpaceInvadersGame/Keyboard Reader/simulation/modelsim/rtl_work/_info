@@ -1,0 +1,1120 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/simulation/modelsim
+Ebuffercontrol
+Z1 w1715860216
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 23
+R0
+Z4 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/buffercontrol.vhd
+Z5 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/buffercontrol.vhd
+l0
+L4 1
+V@TAM=UB?i;VA0OIUzNi?z0
+!s100 9Ik99kI4Sb4NTOXz]]H<b0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1716200222
+!i10b 1
+Z8 !s108 1716200222.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/buffercontrol.vhd|
+Z10 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/buffercontrol.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 13 buffercontrol 0 22 @TAM=UB?i;VA0OIUzNi?z0
+!i122 23
+l17
+L11 31
+VGNUb@16Zfg7P`DfmdggE?0
+!s100 ][TGZ]J7Z0m5dRC>V;N5l2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ekeyboardreader
+Z13 w1715880299
+R2
+R3
+!i122 0
+R0
+Z14 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/KeyboardReader.vhd
+Z15 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/KeyboardReader.vhd
+l0
+L4 1
+Vk_99>cd`7HoJ^coBlALhT0
+!s100 FhL[Md=ffLmPH^OK8iFC22
+R6
+31
+Z16 !s110 1716200221
+!i10b 1
+Z17 !s108 1716200221.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/KeyboardReader.vhd|
+Z19 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/KeyboardReader.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 14 keyboardreader 0 22 k_99>cd`7HoJ^coBlALhT0
+!i122 0
+l50
+L15 70
+VfJ_N3K>aT?InA<>Rnfj`j2
+!s100 lY3P[gfkegm0c`G98D=EC1
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ekeyboardreader_tb
+Z20 w1716200178
+R2
+R3
+!i122 26
+R0
+Z21 8C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/KeyboardReader_tb.vhd
+Z22 FC:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/KeyboardReader_tb.vhd
+l0
+L4 1
+VR8Ti6k=z49]:z1LkKRd:b3
+!s100 ahEhC_F6ON]6kQQ:Hl0iT3
+R6
+32
+Z23 !s110 1716200239
+!i10b 1
+Z24 !s108 1716200239.000000
+Z25 !s90 -reportprogress|300|-work|work|C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/KeyboardReader_tb.vhd|
+!s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/KeyboardReader_tb.vhd|
+!i113 1
+Z26 o-work work
+R12
+Abehavioral
+R2
+R3
+DEx4 work 17 keyboardreader_tb 0 22 R8Ti6k=z49]:z1LkKRd:b3
+!i122 26
+l27
+L7 80
+VkkD1_h88bGk08Hg:HjTM72
+!s100 5>YDd?NGe;S[Fkk10d>Y52
+R6
+32
+R23
+!i10b 1
+R24
+R25
+Z27 !s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/KeyboardReader_tb.vhd|
+!i113 1
+R26
+R12
+Ekeycontrol
+Z28 w1715850053
+R2
+R3
+!i122 10
+R0
+Z29 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keycontrol.vhd
+Z30 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keycontrol.vhd
+l0
+L4 1
+VQ9[Yg^Uch_3B_mI5FZ[W?3
+!s100 m=RzWA[fnTHBB0f6b?^H13
+R6
+31
+R16
+!i10b 1
+R17
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keycontrol.vhd|
+Z32 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keycontrol.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 10 keycontrol 0 22 Q9[Yg^Uch_3B_mI5FZ[W?3
+!i122 10
+l21
+L15 41
+VIIR[;;X1cBE>mPRdM@SmD1
+!s100 lSnZO_iYi4ABMhlYb3D2D0
+R6
+31
+R16
+!i10b 1
+R17
+R31
+R32
+!i113 1
+R11
+R12
+Ekeydecode
+Z33 w1715852396
+R2
+R3
+!i122 1
+R0
+Z34 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keydecode.vhd
+Z35 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keydecode.vhd
+l0
+L4 1
+VhndFXjVioDFBF3NeCAf<g0
+!s100 nQkSDa4dagA@MJGSng]@W3
+R6
+31
+R16
+!i10b 1
+R17
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keydecode.vhd|
+Z37 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keydecode.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 9 keydecode 0 22 hndFXjVioDFBF3NeCAf<g0
+!i122 1
+l43
+L16 50
+VFjW6l7D911l6`aQbTnb`k1
+!s100 bQ9dNFB9UL<<=h6d<`ZEh3
+R6
+31
+R16
+!i10b 1
+R17
+R36
+R37
+!i113 1
+R11
+R12
+Ekeyscan
+Z38 w1715851985
+R2
+R3
+!i122 2
+R0
+Z39 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan.vhd
+Z40 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan.vhd
+l0
+L4 1
+VnR5?NZ2M?@K=b6anP=ENH0
+!s100 kLEVVVGZZiB];[P]7LDTC3
+R6
+31
+R16
+!i10b 1
+R17
+Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan.vhd|
+Z42 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 7 keyscan 0 22 nR5?NZ2M?@K=b6anP=ENH0
+!i122 2
+l42
+L16 49
+V=^9b`8N<MGoMI1LIPTPF;3
+!s100 2@fVEA>2?;aQnRe?WldZA3
+R6
+31
+R16
+!i10b 1
+R17
+R41
+R42
+!i113 1
+R11
+R12
+Ekeyscan_cont
+Z43 w1715851648
+R2
+R3
+!i122 3
+R0
+Z44 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont.vhd
+Z45 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont.vhd
+l0
+L4 1
+VlBeH0kK:>n6h<]e=D6bD72
+!s100 `?6UO9jgYYP>f;Nd`gk5<1
+R6
+31
+R16
+!i10b 1
+R17
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont.vhd|
+Z47 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 12 keyscan_cont 0 22 lBeH0kK:>n6h<]e=D6bD72
+!i122 3
+l34
+L11 47
+VA>[4NGPbnLjJ_PA::lQMg0
+!s100 @l53RDmZF<YcbQaN>6WK:1
+R6
+31
+R16
+!i10b 1
+R17
+R46
+R47
+!i113 1
+R11
+R12
+Ekeyscan_cont_adder
+Z48 w1715851718
+R2
+R3
+!i122 4
+R0
+Z49 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_adder.vhd
+Z50 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_adder.vhd
+l0
+L4 1
+VdCFZDcW`h8f@3dDN5mRHC0
+!s100 fnQJ[^5Bz;9_d@nZg48[12
+R6
+31
+R16
+!i10b 1
+R17
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_adder.vhd|
+Z52 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_adder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 18 keyscan_cont_adder 0 22 dCFZDcW`h8f@3dDN5mRHC0
+!i122 4
+l27
+L14 47
+Vf1;DD?_3YEn<PJKLGMIf93
+!s100 ESV>P<GWn1UhYoQ7@Po8I0
+R6
+31
+R16
+!i10b 1
+R17
+R51
+R52
+!i113 1
+R11
+R12
+Ekeyscan_cont_ffd
+Z53 w1715851373
+R2
+R3
+!i122 7
+R0
+Z54 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_ffd.vhd
+Z55 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_ffd.vhd
+l0
+L4 1
+Vc?3D2Rf@A`[UzBb[]`e240
+!s100 0fC@aK2of7SCGGR2jRl[z2
+R6
+31
+R16
+!i10b 1
+R17
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_ffd.vhd|
+Z57 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_ffd.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 16 keyscan_cont_ffd 0 22 c?3D2Rf@A`[UzBb[]`e240
+!i122 7
+l17
+Z58 L15 7
+VSJ=<FeN^J@JbeaHd?Y<>h1
+!s100 DCzAmJXeogJWYjaNg1?7E0
+R6
+31
+R16
+!i10b 1
+R17
+R56
+R57
+!i113 1
+R11
+R12
+Ekeyscan_cont_fulladder
+Z59 w1715851563
+R2
+R3
+!i122 5
+R0
+Z60 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_fulladder.vhd
+Z61 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_fulladder.vhd
+l0
+L4 1
+Vnb6<WX19AHW]RSVkoCMGa1
+!s100 N6Bn9e8kAiCz1Nd462io;2
+R6
+31
+R16
+!i10b 1
+R17
+Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_fulladder.vhd|
+Z63 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_fulladder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 22 keyscan_cont_fulladder 0 22 nb6<WX19AHW]RSVkoCMGa1
+!i122 5
+l16
+Z64 L14 8
+VhI9]lHE_?0mn8NJVMTDZG1
+!s100 Cd=W0Llbobm`UjV2K<BXI2
+R6
+31
+R16
+!i10b 1
+R17
+R62
+R63
+!i113 1
+R11
+R12
+Ekeyscan_cont_reg
+Z65 w1715851663
+R2
+R3
+!i122 6
+R0
+Z66 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_reg.vhd
+Z67 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_reg.vhd
+l0
+L4 1
+VQP]A@H9`5Jg[Nm=g<Y4OF2
+!s100 g7fB27ah?1E=N=<2;;EM`0
+R6
+31
+R16
+!i10b 1
+R17
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_reg.vhd|
+Z69 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_reg.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 16 keyscan_cont_reg 0 22 QP]A@H9`5Jg[Nm=g<Y4OF2
+!i122 6
+l26
+Z70 L14 51
+Vz]_Ujoi4d^MGVcBIUm?D13
+!s100 2e6Y=ifFIVoMKM[YIPEHQ0
+R6
+31
+R16
+!i10b 1
+R17
+R68
+R69
+!i113 1
+R11
+R12
+Ekeyscan_decoder
+Z71 w1715850591
+R2
+R3
+!i122 8
+R0
+Z72 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_decoder.vhd
+Z73 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_decoder.vhd
+l0
+L5 1
+VK2k??Rk3MbTN]g?jYfEnZ1
+!s100 MjmI[74>TT]g6LgPShY5;3
+R6
+31
+R16
+!i10b 1
+R17
+Z74 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_decoder.vhd|
+Z75 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_decoder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 15 keyscan_decoder 0 22 K2k??Rk3MbTN]g?jYfEnZ1
+!i122 8
+l14
+L12 9
+VEE?l<KSAFBdnEZ6kXh;0e2
+!s100 hZkZO?bdI`Nf06^bKnW@;1
+R6
+31
+R16
+!i10b 1
+R17
+R74
+R75
+!i113 1
+R11
+R12
+Ekeyscan_mux
+Z76 w1715850674
+R2
+R3
+!i122 9
+R0
+Z77 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_mux.vhd
+Z78 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_mux.vhd
+l0
+L4 1
+V^7f5RT9e:ijookiWU<B1[2
+!s100 8WS_W]R0XTnzMC;Fz;W^m0
+R6
+31
+R16
+!i10b 1
+R17
+Z79 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_mux.vhd|
+Z80 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_mux.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 11 keyscan_mux 0 22 ^7f5RT9e:ijookiWU<B1[2
+!i122 9
+l14
+Z81 L12 7
+V284ZNoZTEFQ>iON1Dd;i>2
+!s100 ]bim<c7IfzZ=7oDV8_99G2
+R6
+31
+R16
+!i10b 1
+R17
+R79
+R80
+!i113 1
+R11
+R12
+Emac_compare
+Z82 w1715873096
+R2
+R3
+!i122 20
+R0
+Z83 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_compare.vhd
+Z84 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_compare.vhd
+l0
+L4 1
+VIR_YdMUolJSV63e0G<^LB1
+!s100 1;JoJ1@z@oFS=K;LDhe<30
+R6
+31
+R7
+!i10b 1
+R8
+Z85 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_compare.vhd|
+Z86 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_compare.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 11 mac_compare 0 22 IR_YdMUolJSV63e0G<^LB1
+!i122 20
+l13
+L11 7
+Ve_:_XdgWo=bj9Ke5L1=f:0
+!s100 ZO@JUX]^CSMdQDBL1>oIX1
+R6
+31
+R7
+!i10b 1
+R8
+R85
+R86
+!i113 1
+R11
+R12
+Emac_cont
+Z87 w1715874585
+R2
+R3
+!i122 14
+R0
+Z88 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont.vhd
+Z89 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont.vhd
+l0
+L4 1
+VU95:>eN2`V>FTEinz1TMI2
+!s100 O]oR19YFA:e8?gUSN;34L2
+R6
+31
+R7
+!i10b 1
+R8
+Z90 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont.vhd|
+Z91 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 8 mac_cont 0 22 U95:>eN2`V>FTEinz1TMI2
+!i122 14
+l32
+L11 44
+VdfRULWk1WXcYj4?abg:gL1
+!s100 Rz:EzBn^GSAZmhi:]4f?F2
+R6
+31
+R7
+!i10b 1
+R8
+R90
+R91
+!i113 1
+R11
+R12
+Emac_cont_adder
+Z92 w1715874196
+R2
+R3
+!i122 15
+R0
+Z93 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_adder.vhd
+Z94 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_adder.vhd
+l0
+L4 1
+VMg61j6QiWf6hPTHoEUW7H3
+!s100 S]2bJT8diXzPZ9N;@R5@90
+R6
+31
+R7
+!i10b 1
+R8
+Z95 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_adder.vhd|
+Z96 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_adder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 14 mac_cont_adder 0 22 Mg61j6QiWf6hPTHoEUW7H3
+!i122 15
+l26
+L13 40
+V_:I?co:a?;88D9f6F4@Pf3
+!s100 bV?REIRK2F`NJ9Jikazdh3
+R6
+31
+R7
+!i10b 1
+R8
+R95
+R96
+!i113 1
+R11
+R12
+Emac_cont_fulladder
+Z97 w1715873944
+R2
+R3
+!i122 16
+R0
+Z98 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_fulladder.vhd
+Z99 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_fulladder.vhd
+l0
+L4 1
+V_Q95eXb^InJ^LQgFGd>7e0
+!s100 fM]Eb6:`>l52[7aE4ho0a2
+R6
+31
+R7
+!i10b 1
+R8
+Z100 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_fulladder.vhd|
+Z101 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_fulladder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 18 mac_cont_fulladder 0 22 _Q95eXb^InJ^LQgFGd>7e0
+!i122 16
+l16
+R64
+VS;FKf5GSNz<Ei;@hdKdG11
+!s100 @R:dOT:hW;fWdhAH6e4mm2
+R6
+31
+R7
+!i10b 1
+R8
+R100
+R101
+!i113 1
+R11
+R12
+Emac_cont_reg
+Z102 w1715874568
+R2
+R3
+!i122 17
+R0
+Z103 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_reg.vhd
+Z104 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_reg.vhd
+l0
+L4 1
+VBcYjKPNNz1?VB=]JFRk^22
+!s100 IP2iWcD9OKe23MIOj`JjS2
+R6
+31
+R7
+!i10b 1
+R8
+Z105 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_reg.vhd|
+Z106 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_reg.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 12 mac_cont_reg 0 22 BcYjKPNNz1?VB=]JFRk^22
+!i122 17
+l26
+L14 42
+VQfX<fWa_OkdzK:Fm@f1Wd2
+!s100 2S9emhQVzXINUkS@ddRWJ3
+R6
+31
+R7
+!i10b 1
+R8
+R105
+R106
+!i113 1
+R11
+R12
+Emac_ffd
+Z107 w1715874053
+R2
+R3
+!i122 18
+R0
+Z108 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_ffd.vhd
+Z109 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_ffd.vhd
+l0
+L4 1
+VbhF9ehV=7R6X9nVi1i_Xz1
+!s100 0b4DTGiRG2RBF2fXT[nTc3
+R6
+31
+R7
+!i10b 1
+R8
+Z110 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_ffd.vhd|
+Z111 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_ffd.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 7 mac_ffd 0 22 bhF9ehV=7R6X9nVi1i_Xz1
+!i122 18
+l17
+L15 9
+VBbaJRnR@E[?T7`oz6BX^R1
+!s100 3KVHL:U=cak@QBD86Yb]72
+R6
+31
+R7
+!i10b 1
+R8
+R110
+R111
+!i113 1
+R11
+R12
+Emac_mux
+Z112 w1715872988
+R2
+R3
+!i122 19
+R0
+Z113 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_mux.vhd
+Z114 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_mux.vhd
+l0
+L4 1
+V]WYBD?d1zDz^zYE5]0CQ40
+!s100 7`GB[6iCB`4h2SN8MfNJZ3
+R6
+31
+R7
+!i10b 1
+R8
+Z115 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_mux.vhd|
+Z116 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_mux.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 7 mac_mux 0 22 ]WYBD?d1zDz^zYE5]0CQ40
+!i122 19
+l14
+R81
+VKiz_GCVP@DX=5RoizI?eY1
+!s100 WZQ]SjQV64Tln79i@a2]32
+R6
+31
+R7
+!i10b 1
+R8
+R115
+R116
+!i113 1
+R11
+R12
+Ememoryaddresscontrol
+Z117 w1715874849
+R2
+R3
+!i122 13
+R0
+Z118 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/memoryaddresscontrol.vhd
+Z119 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/memoryaddresscontrol.vhd
+l0
+L4 1
+V90`cb:YQF>QZe@QS8MOT<0
+!s100 8kEUD@@YCMk1oFKT@=H>H0
+R6
+31
+R7
+!i10b 1
+R8
+Z120 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/memoryaddresscontrol.vhd|
+Z121 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/memoryaddresscontrol.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 20 memoryaddresscontrol 0 22 90`cb:YQF>QZe@QS8MOT<0
+!i122 13
+l48
+L13 77
+VO<NV^h^mb>[>eD:UPB6F:1
+!s100 c:@h=1JHbHT@XFRnm`REF3
+R6
+31
+R7
+!i10b 1
+R8
+R120
+R121
+!i113 1
+R11
+R12
+Eoutputbuffer
+Z122 w1715860478
+R2
+R3
+!i122 22
+R0
+Z123 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputbuffer.vhd
+Z124 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputbuffer.vhd
+l0
+L4 1
+VI^kTVzONPjaYgiTmmR;CX1
+!s100 8m3m>CfiJAMED?>1[Hg>^1
+R6
+31
+R7
+!i10b 1
+R8
+Z125 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputbuffer.vhd|
+Z126 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputbuffer.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 12 outputbuffer 0 22 I^kTVzONPjaYgiTmmR;CX1
+!i122 22
+l34
+L13 42
+VU:5>TjEM[=zS04mkaP?Zh0
+!s100 @CmMG`NfkO<5caLHIDXBj0
+R6
+31
+R7
+!i10b 1
+R8
+R125
+R126
+!i113 1
+R11
+R12
+Eoutputregister
+Z127 w1715859731
+R2
+R3
+!i122 24
+R0
+Z128 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister.vhd
+Z129 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister.vhd
+l0
+L4 1
+V^ledDNo<U_K<8QHW7Y<MN3
+!s100 UEoj0M_bf00lgJUmIg@Vm2
+R6
+31
+R7
+!i10b 1
+R8
+Z130 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister.vhd|
+Z131 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 14 outputregister 0 22 ^ledDNo<U_K<8QHW7Y<MN3
+!i122 24
+l26
+R70
+Vn[dgTBQ]QUZNkMKlnmi8K3
+!s100 e<WHaS866c]ZkaM:Q6P5X3
+R6
+31
+R7
+!i10b 1
+R8
+R130
+R131
+!i113 1
+R11
+R12
+Eoutputregister_ffd
+Z132 w1715859311
+R2
+R3
+!i122 25
+R0
+Z133 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister_ffd.vhd
+Z134 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister_ffd.vhd
+l0
+L4 1
+VnQ43[C@D[VXGEzSidb6563
+!s100 cD8=Y>c?bbnM@LIXU`BEm1
+R6
+31
+Z135 !s110 1716200223
+!i10b 1
+Z136 !s108 1716200223.000000
+Z137 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister_ffd.vhd|
+Z138 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister_ffd.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 18 outputregister_ffd 0 22 nQ43[C@D[VXGEzSidb6563
+!i122 25
+l17
+R58
+VTN]RAV<N[GlNLC[SVHK@21
+!s100 GIKV1f3;DO@l>3lJfkBZn2
+R6
+31
+R135
+!i10b 1
+R136
+R137
+R138
+!i113 1
+R11
+R12
+Eram
+Z139 w1715871776
+Z140 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+!i122 21
+R0
+Z141 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ram.vhd
+Z142 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ram.vhd
+l0
+L21 1
+VIzc2z]o^UnZbR@alQW]Rh3
+!s100 ?Nkfo<:[8oQFCSE2S@UW]1
+R6
+31
+R7
+!i10b 1
+R8
+Z143 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ram.vhd|
+Z144 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ram.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R140
+R2
+R3
+DEx4 work 3 ram 0 22 Izc2z]o^UnZbR@alQW]Rh3
+!i122 21
+l39
+L34 17
+VT0O4O^`?4IKEWCzQ3iWI31
+!s100 ]KDBZXJbb?dk<NB0hQ_ZP0
+R6
+31
+R7
+!i10b 1
+R8
+R143
+R144
+!i113 1
+R11
+R12
+Eringbuffer
+Z145 w1715878814
+R2
+R3
+!i122 11
+R0
+Z146 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffer.vhd
+Z147 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffer.vhd
+l0
+L4 1
+Vo0k_@I9UCiWX3faefzM3Y0
+!s100 X4go:cFkLPNcdL92aaBLG2
+R6
+31
+R7
+!i10b 1
+R8
+Z148 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffer.vhd|
+Z149 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffer.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 10 ringbuffer 0 22 o0k_@I9UCiWX3faefzM3Y0
+!i122 11
+l43
+L13 67
+VH_9Rl]4imC6X9ze8hf>hg3
+!s100 Ak<6f>WiD@=OX2lcT?c;F1
+R6
+31
+R7
+!i10b 1
+R8
+R148
+R149
+!i113 1
+R11
+R12
+Eringbuffercontrol
+Z150 w1715872182
+R2
+R3
+!i122 12
+R0
+Z151 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffercontrol.vhd
+Z152 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffercontrol.vhd
+l0
+L4 1
+VEWfQHK<VFGB?VnHZ1<PgA1
+!s100 eaCKT1eR^OYF1B?W?TO`90
+R6
+31
+R7
+!i10b 1
+R8
+Z153 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffercontrol.vhd|
+Z154 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffercontrol.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 17 ringbuffercontrol 0 22 EWfQHK<VFGB?VnHZ1<PgA1
+!i122 12
+l17
+L11 45
+ViUbeIQZJ6a47>dGPWY_C12
+!s100 Yjz?<l11152T;j;m[Db1>3
+R6
+31
+R7
+!i10b 1
+R8
+R153
+R154
+!i113 1
+R11
+R12

@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "wr",
+					"strict" : false
+				},
+				{
+					"name" : "init",
+					"strict" : false
+				},
+				{
+					"name" : "DXval",
+					"strict" : false
+				},
+				{
+					"name" : "dFlag",
+					"strict" : false
+				},
+				{
+					"name" : "enRX",
+					"strict" : false
+				},
+				{
+					"name" : "accept",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "RXerror",
+					"strict" : false
+				},
+				{
+					"name" : "pFlag",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

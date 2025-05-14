@@ -1,0 +1,64 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity SerialReceiver_Counter_Reg is
+port(	
+	D : in std_logic_vector(3 downto 0);
+	clk : in std_logic;
+	E : in std_logic;
+	Reset : in std_logic;
+	Q : out std_logic_vector(3 downto 0)
+);
+end SerialReceiver_Counter_Reg;
+
+architecture behavioral of SerialReceiver_Counter_Reg is
+
+component SerialReceiver_Counter_Reg_FFD port(	
+		clk : in std_logic;
+		Reset : in STD_LOGIC;
+		Set : in std_logic;
+		D : IN STD_LOGIC;
+		EN : IN STD_LOGIC;
+		Q : out std_logic
+);
+end component;
+
+begin
+
+SerialReceiver_Counter_Reg_FFD_U0: SerialReceiver_Counter_Reg_FFD port map(
+		clk => clk,
+		Reset => Reset,
+		Set => '0',
+		D => D(3),
+		EN => E,
+		Q => Q(3)
+);
+
+SerialReceiver_Counter_Reg_FFD_U1: SerialReceiver_Counter_Reg_FFD port map(
+		clk => clk,
+		Reset => Reset,
+		SET => '0',
+		D => D(2),
+		EN => E,
+		Q => Q(2)
+);
+
+SerialReceiver_Counter_Reg_FFD_U2: SerialReceiver_Counter_Reg_FFD port map(
+		clk => clk,
+		Reset => Reset,
+		Set => '0',
+		D => D(1),
+		EN => E,
+		Q => Q(1)
+);
+
+SerialReceiver_Counter_Reg_FFD_U3: SerialReceiver_Counter_Reg_FFD port map(
+		clk => clk,
+		Reset => Reset,
+		Set => '0',
+		D => D(0),
+		EN => E,
+		Q => Q(0)
+);
+
+end behavioral;

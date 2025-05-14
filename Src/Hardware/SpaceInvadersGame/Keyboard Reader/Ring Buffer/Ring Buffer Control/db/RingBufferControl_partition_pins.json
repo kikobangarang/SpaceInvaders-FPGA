@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Wr",
+					"strict" : false
+				},
+				{
+					"name" : "selPG",
+					"strict" : false
+				},
+				{
+					"name" : "Wreg",
+					"strict" : false
+				},
+				{
+					"name" : "DAC",
+					"strict" : false
+				},
+				{
+					"name" : "incPut",
+					"strict" : false
+				},
+				{
+					"name" : "incGet",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "DAV",
+					"strict" : false
+				},
+				{
+					"name" : "full",
+					"strict" : false
+				},
+				{
+					"name" : "CTS",
+					"strict" : false
+				},
+				{
+					"name" : "empty",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,45 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Coinaccept is
+port(
+	Reset, clk, Coinin, accept: in std_logic;
+	Coinout: out std_logic
+);
+end Coinaccept;
+
+architecture behavioral of Coinaccept is
+
+type STATE_TYPE is (STATE_WAIT_COIN, STATE_PASS_COIN);
+
+signal CurrentState, NextState : STATE_TYPE;
+
+begin
+
+-- Flip-Flop's
+CurrentState <= STATE_WAIT_COIN when Reset = '1' else NextState when rising_edge(clk);
+
+--Generate Next State
+GenerateNextState:
+process(CurrentState, Coinin, accept)
+	
+	begin
+		
+		case CurrentState is
+			
+			when STATE_WAIT_COIN => if(Coinin = '1') then
+										NextState <= STATE_PASS_COIN;
+									else NextState <= STATE_WAIT_COIN;
+										end if;
+						
+			when STATE_PASS_COIN => if(accept = '1') then
+													NextState <= STATE_WAIT_COIN;
+														else NextState <= STATE_PASS_COIN;
+															end if;
+		
+		end case;														
+	end process;
+								
+Coinout <= '1' when (CurrentState = STATE_PASS_COIN) else '0';
+	
+end behavioral;

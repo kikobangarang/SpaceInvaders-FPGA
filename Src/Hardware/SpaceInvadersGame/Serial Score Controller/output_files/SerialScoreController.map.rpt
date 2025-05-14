@@ -1,0 +1,635 @@
+Analysis & Synthesis report for SerialScoreController
+Thu May 23 01:39:45 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |SerialScoreController|Score_Dispatcher:Score_Dispatcher_U0|CurrentState
+  9. State Machine - |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|SerialControl:SerialControl_U0|CurrentState
+ 10. General Register Statistics
+ 11. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD6"
+ 12. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD5"
+ 13. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD4"
+ 14. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD3"
+ 15. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD2"
+ 16. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD1"
+ 17. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD0"
+ 18. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U3"
+ 19. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U2"
+ 20. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U1"
+ 21. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U0"
+ 22. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0"
+ 23. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Adder:Counter_Adder_U0|Counter_Adder_FullAdder:Counter_Adder_FullAdder_U3"
+ 24. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Adder:Counter_Adder_U0"
+ 25. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3"
+ 26. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U2"
+ 27. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U1"
+ 28. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U0"
+ 29. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0"
+ 30. Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0"
+ 31. Post-Synthesis Netlist Statistics for Top Partition
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu May 23 01:39:45 2024       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; SerialScoreController                       ;
+; Top-level Entity Name              ; SerialScoreController                       ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 25                                          ;
+;     Total combinational functions  ; 17                                          ;
+;     Dedicated logic registers      ; 20                                          ;
+; Total registers                    ; 20                                          ;
+; Total pins                         ; 13                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                    ;
++------------------------------------------------------------------+-----------------------+-----------------------+
+; Option                                                           ; Setting               ; Default Value         ;
++------------------------------------------------------------------+-----------------------+-----------------------+
+; Device                                                           ; 10M50DAF484C6GES      ;                       ;
+; Top-level entity name                                            ; SerialScoreController ; SerialScoreController ;
+; Family name                                                      ; MAX 10                ; Cyclone V             ;
+; Use smart compilation                                            ; Off                   ; Off                   ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                    ; On                    ;
+; Enable compact report table                                      ; Off                   ; Off                   ;
+; Restructure Multiplexers                                         ; Auto                  ; Auto                  ;
+; Create Debugging Nodes for IP Cores                              ; Off                   ; Off                   ;
+; Preserve fewer node names                                        ; On                    ; On                    ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable                ; Enable                ;
+; Verilog Version                                                  ; Verilog_2001          ; Verilog_2001          ;
+; VHDL Version                                                     ; VHDL_1993             ; VHDL_1993             ;
+; State Machine Processing                                         ; Auto                  ; Auto                  ;
+; Safe State Machine                                               ; Off                   ; Off                   ;
+; Extract Verilog State Machines                                   ; On                    ; On                    ;
+; Extract VHDL State Machines                                      ; On                    ; On                    ;
+; Ignore Verilog initial constructs                                ; Off                   ; Off                   ;
+; Iteration limit for constant Verilog loops                       ; 5000                  ; 5000                  ;
+; Iteration limit for non-constant Verilog loops                   ; 250                   ; 250                   ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                    ; On                    ;
+; Infer RAMs from Raw Logic                                        ; On                    ; On                    ;
+; Parallel Synthesis                                               ; On                    ; On                    ;
+; DSP Block Balancing                                              ; Auto                  ; Auto                  ;
+; NOT Gate Push-Back                                               ; On                    ; On                    ;
+; Power-Up Don't Care                                              ; On                    ; On                    ;
+; Remove Redundant Logic Cells                                     ; Off                   ; Off                   ;
+; Remove Duplicate Registers                                       ; On                    ; On                    ;
+; Ignore CARRY Buffers                                             ; Off                   ; Off                   ;
+; Ignore CASCADE Buffers                                           ; Off                   ; Off                   ;
+; Ignore GLOBAL Buffers                                            ; Off                   ; Off                   ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                   ; Off                   ;
+; Ignore LCELL Buffers                                             ; Off                   ; Off                   ;
+; Ignore SOFT Buffers                                              ; On                    ; On                    ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                   ; Off                   ;
+; Optimization Technique                                           ; Balanced              ; Balanced              ;
+; Carry Chain Length                                               ; 70                    ; 70                    ;
+; Auto Carry Chains                                                ; On                    ; On                    ;
+; Auto Open-Drain Pins                                             ; On                    ; On                    ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                   ; Off                   ;
+; Auto ROM Replacement                                             ; On                    ; On                    ;
+; Auto RAM Replacement                                             ; On                    ; On                    ;
+; Auto DSP Block Replacement                                       ; On                    ; On                    ;
+; Auto Shift Register Replacement                                  ; Auto                  ; Auto                  ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                  ; Auto                  ;
+; Auto Clock Enable Replacement                                    ; On                    ; On                    ;
+; Strict RAM Replacement                                           ; Off                   ; Off                   ;
+; Allow Synchronous Control Signals                                ; On                    ; On                    ;
+; Force Use of Synchronous Clear Signals                           ; Off                   ; Off                   ;
+; Auto RAM Block Balancing                                         ; On                    ; On                    ;
+; Auto RAM to Logic Cell Conversion                                ; Off                   ; Off                   ;
+; Auto Resource Sharing                                            ; Off                   ; Off                   ;
+; Allow Any RAM Size For Recognition                               ; Off                   ; Off                   ;
+; Allow Any ROM Size For Recognition                               ; Off                   ; Off                   ;
+; Allow Any Shift Register Size For Recognition                    ; Off                   ; Off                   ;
+; Use LogicLock Constraints during Resource Balancing              ; On                    ; On                    ;
+; Ignore translate_off and synthesis_off directives                ; Off                   ; Off                   ;
+; Timing-Driven Synthesis                                          ; On                    ; On                    ;
+; Report Parameter Settings                                        ; On                    ; On                    ;
+; Report Source Assignments                                        ; On                    ; On                    ;
+; Report Connectivity Checks                                       ; On                    ; On                    ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                   ; Off                   ;
+; Synchronization Register Chain Length                            ; 2                     ; 2                     ;
+; Power Optimization During Synthesis                              ; Normal compilation    ; Normal compilation    ;
+; HDL message level                                                ; Level2                ; Level2                ;
+; Suppress Register Optimization Related Messages                  ; Off                   ; Off                   ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                  ; 5000                  ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                  ; 5000                  ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                   ; 100                   ;
+; Clock MUX Protection                                             ; On                    ; On                    ;
+; Auto Gated Clock Conversion                                      ; Off                   ; Off                   ;
+; Block Design Naming                                              ; Auto                  ; Auto                  ;
+; SDC constraint protection                                        ; Off                   ; Off                   ;
+; Synthesis Effort                                                 ; Auto                  ; Auto                  ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                    ; On                    ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                   ; Off                   ;
+; Analysis & Synthesis Message Level                               ; Medium                ; Medium                ;
+; Disable Register Merging Across Hierarchies                      ; Auto                  ; Auto                  ;
+; Resource Aware Inference For Block RAM                           ; On                    ; On                    ;
++------------------------------------------------------------------+-----------------------+-----------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                       ;
++-----------------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                                                   ; Library ;
++-----------------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
+; SerialScoreController.vhd               ; yes             ; User VHDL File        ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/SerialScoreController.vhd               ;         ;
+; score_serialreceiver.vhd                ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver.vhd                ;         ;
+; serialcontrol.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/serialcontrol.vhd                       ;         ;
+; paritycheck.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck.vhd                         ;         ;
+; paritycheck_counter.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter.vhd                 ;         ;
+; paritycheck_counter_adder.vhd           ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_adder.vhd           ;         ;
+; paritycheck_counter_adder_fulladder.vhd ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_adder_fulladder.vhd ;         ;
+; paritycheck_counter_reg.vhd             ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_reg.vhd             ;         ;
+; paritycheck_counter_reg_ffd.vhd         ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_reg_ffd.vhd         ;         ;
+; counter.vhd                             ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter.vhd                             ;         ;
+; counter_adder.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_adder.vhd                       ;         ;
+; counter_adder_fulladder.vhd             ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_adder_fulladder.vhd             ;         ;
+; counter_reg.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_reg.vhd                         ;         ;
+; counter_reg_ffd.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_reg_ffd.vhd                     ;         ;
+; compare8.vhd                            ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/compare8.vhd                            ;         ;
+; compare7.vhd                            ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/compare7.vhd                            ;         ;
+; score_serialreceiver_shiftregister.vhd  ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver_shiftregister.vhd  ;         ;
+; shiftregister_ffd.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/shiftregister_ffd.vhd                   ;         ;
+; score_dispatcher.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_dispatcher.vhd                    ;         ;
++-----------------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 25          ;
+;                                             ;             ;
+; Total combinational functions               ; 17          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 7           ;
+;     -- 3 input functions                    ; 5           ;
+;     -- <=2 input functions                  ; 5           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 17          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 20          ;
+;     -- Dedicated logic registers            ; 20          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 13          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Reset~input ;
+; Maximum fan-out                             ; 15          ;
+; Total fan-out                               ; 140         ;
+; Average fan-out                             ; 2.22        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
++----------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------+--------------+
+; Compilation Hierarchy Node                                                       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                    ; Entity Name                        ; Library Name ;
++----------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------+--------------+
+; |SerialScoreController                                                           ; 17 (0)              ; 20 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |SerialScoreController                                                                                                                                                                                                                                 ; SerialScoreController              ; work         ;
+;    |Score_Dispatcher:Score_Dispatcher_U0|                                        ; 3 (3)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_Dispatcher:Score_Dispatcher_U0                                                                                                                                                                                            ; Score_Dispatcher                   ; work         ;
+;    |Score_SerialReceiver:Score_SerialReceiver_U0|                                ; 14 (0)              ; 16 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0                                                                                                                                                                                    ; Score_SerialReceiver               ; work         ;
+;       |Compare8:Compare8_U0|                                                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Compare8:Compare8_U0                                                                                                                                                               ; Compare8                           ; work         ;
+;       |Counter:Counter_U0|                                                       ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0                                                                                                                                                                 ; Counter                            ; work         ;
+;          |Counter_Reg:Counter_Reg_U0|                                            ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0                                                                                                                                      ; Counter_Reg                        ; work         ;
+;             |Counter_Reg_FFD:Counter_Reg_FFD_U0|                                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U0                                                                                                   ; Counter_Reg_FFD                    ; work         ;
+;             |Counter_Reg_FFD:Counter_Reg_FFD_U1|                                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U1                                                                                                   ; Counter_Reg_FFD                    ; work         ;
+;             |Counter_Reg_FFD:Counter_Reg_FFD_U2|                                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U2                                                                                                   ; Counter_Reg_FFD                    ; work         ;
+;             |Counter_Reg_FFD:Counter_Reg_FFD_U3|                                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U3                                                                                                   ; Counter_Reg_FFD                    ; work         ;
+;       |ParityCheck:ParityCheck_U0|                                               ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0                                                                                                                                                         ; ParityCheck                        ; work         ;
+;          |ParityCheck_Counter:ParityCheckCounter_U0|                             ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0                                                                                                               ; ParityCheck_Counter                ; work         ;
+;             |ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|                 ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0                                                            ; ParityCheck_Counter_Reg            ; work         ;
+;                |ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3 ; ParityCheck_Counter_Reg_FFD        ; work         ;
+;       |Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0| ; 0 (0)               ; 7 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0                                                                                                           ; Score_SerialReceiver_ShiftRegister ; work         ;
+;          |ShiftRegister_FFD:FFD0|                                                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD0                                                                                    ; ShiftRegister_FFD                  ; work         ;
+;          |ShiftRegister_FFD:FFD1|                                                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD1                                                                                    ; ShiftRegister_FFD                  ; work         ;
+;          |ShiftRegister_FFD:FFD2|                                                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD2                                                                                    ; ShiftRegister_FFD                  ; work         ;
+;          |ShiftRegister_FFD:FFD3|                                                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD3                                                                                    ; ShiftRegister_FFD                  ; work         ;
+;          |ShiftRegister_FFD:FFD4|                                                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD4                                                                                    ; ShiftRegister_FFD                  ; work         ;
+;          |ShiftRegister_FFD:FFD5|                                                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD5                                                                                    ; ShiftRegister_FFD                  ; work         ;
+;          |ShiftRegister_FFD:FFD6|                                                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD6                                                                                    ; ShiftRegister_FFD                  ; work         ;
+;       |SerialControl:SerialControl_U0|                                           ; 8 (8)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|SerialControl:SerialControl_U0                                                                                                                                                     ; SerialControl                      ; work         ;
++----------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |SerialScoreController|Score_Dispatcher:Score_Dispatcher_U0|CurrentState                                                ;
++----------------------------+-------------------------+---------------------------+-------------------------+----------------------------+
+; Name                       ; CurrentState.STATE_DONE ; CurrentState.STATE_ENABLE ; CurrentState.STATE_DATA ; CurrentState.STATE_WAITING ;
++----------------------------+-------------------------+---------------------------+-------------------------+----------------------------+
+; CurrentState.STATE_WAITING ; 0                       ; 0                         ; 0                       ; 0                          ;
+; CurrentState.STATE_DATA    ; 0                       ; 0                         ; 1                       ; 1                          ;
+; CurrentState.STATE_ENABLE  ; 0                       ; 1                         ; 0                       ; 1                          ;
+; CurrentState.STATE_DONE    ; 1                       ; 0                         ; 0                       ; 1                          ;
++----------------------------+-------------------------+---------------------------+-------------------------+----------------------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |SerialScoreController|Score_SerialReceiver:Score_SerialReceiver_U0|SerialControl:SerialControl_U0|CurrentState                            ;
++----------------------------------+----------------------------------+-------------------------------+----------------------------+-------------------------+
+; Name                             ; CurrentState.STATE_WAITINGACCEPT ; CurrentState.STATE_ERRORCHECK ; CurrentState.STATE_WRITING ; CurrentState.STATE_INIT ;
++----------------------------------+----------------------------------+-------------------------------+----------------------------+-------------------------+
+; CurrentState.STATE_INIT          ; 0                                ; 0                             ; 0                          ; 0                       ;
+; CurrentState.STATE_WRITING       ; 0                                ; 0                             ; 1                          ; 1                       ;
+; CurrentState.STATE_ERRORCHECK    ; 0                                ; 1                             ; 0                          ; 1                       ;
+; CurrentState.STATE_WAITINGACCEPT ; 1                                ; 0                             ; 0                          ; 1                       ;
++----------------------------------+----------------------------------+-------------------------------+----------------------------+-------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 20    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 20    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 7     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD6" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                        ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                   ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD5" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                        ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                   ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD4" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                        ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                   ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD3" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                        ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                   ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD2" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                        ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                   ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD1" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                        ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                   ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD0" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                        ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                   ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U3" ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                         ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                    ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U2" ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                         ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                    ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U1" ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                         ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                    ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U0" ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                         ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                    ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0" ;
++------+-------+----------+----------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------+
+; e    ; Input ; Info     ; Stuck at VCC                                                                                 ;
++------+-------+----------+----------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Adder:Counter_Adder_U0|Counter_Adder_FullAdder:Counter_Adder_FullAdder_U3" ;
++-------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                           ;
++-------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; cyout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                               ;
++-------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Adder:Counter_Adder_U0" ;
++---------+-------+----------+-----------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                       ;
++---------+-------+----------+-----------------------------------------------------------------------------------------------+
+; b[3..1] ; Input ; Info     ; Stuck at GND                                                                                  ;
+; b[0]    ; Input ; Info     ; Stuck at VCC                                                                                  ;
+; cyi     ; Input ; Info     ; Stuck at GND                                                                                  ;
++---------+-------+----------+-----------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3" ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                                                                           ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                                                                                                      ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U2" ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                                                                           ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                                                                                                      ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U1" ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                                                                           ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                                                                                                      ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U0" ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                                                                           ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                                                                                                      ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; e    ; Input ; Info     ; Stuck at VCC                                                                                                                                                           ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0" ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b[3..1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                           ;
+; cyi     ; Input  ; Info     ; Stuck at GND                                                                                                                                                           ;
+; c4      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                    ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 13                          ;
+; cycloneiii_ff         ; 20                          ;
+;     CLR               ; 13                          ;
+;     ENA CLR           ; 7                           ;
+; cycloneiii_lcell_comb ; 17                          ;
+;     normal            ; 17                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 7                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.17                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu May 23 01:39:40 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SerialScoreController -c SerialScoreController
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file serialscorecontroller.vhd
+    Info (12022): Found design unit 1: SerialScoreController-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/SerialScoreController.vhd Line: 12
+    Info (12023): Found entity 1: SerialScoreController File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/SerialScoreController.vhd Line: 4
+Info (12127): Elaborating entity "SerialScoreController" for the top level hierarchy
+Warning (12125): Using design file score_serialreceiver.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Score_SerialReceiver-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver.vhd Line: 12
+    Info (12023): Found entity 1: Score_SerialReceiver File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver.vhd Line: 4
+Info (12128): Elaborating entity "Score_SerialReceiver" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/SerialScoreController.vhd Line: 39
+Warning (12125): Using design file serialcontrol.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: SerialControl-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/serialcontrol.vhd Line: 11
+    Info (12023): Found entity 1: SerialControl File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/serialcontrol.vhd Line: 4
+Info (12128): Elaborating entity "SerialControl" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|SerialControl:SerialControl_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver.vhd Line: 65
+Warning (12125): Using design file paritycheck.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ParityCheck-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck.vhd Line: 11
+    Info (12023): Found entity 1: ParityCheck File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck.vhd Line: 4
+Info (12128): Elaborating entity "ParityCheck" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver.vhd Line: 78
+Warning (12125): Using design file paritycheck_counter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ParityCheck_Counter-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter.vhd Line: 11
+    Info (12023): Found entity 1: ParityCheck_Counter File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter.vhd Line: 4
+Info (12128): Elaborating entity "ParityCheck_Counter" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck.vhd Line: 22
+Warning (12125): Using design file paritycheck_counter_adder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ParityCheck_Counter_Adder-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_adder.vhd Line: 14
+    Info (12023): Found entity 1: ParityCheck_Counter_Adder File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_adder.vhd Line: 4
+Info (12128): Elaborating entity "ParityCheck_Counter_Adder" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter.vhd Line: 35
+Warning (12125): Using design file paritycheck_counter_adder_fulladder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ParityCheck_Counter_Adder_FullAdder-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_adder_fulladder.vhd Line: 14
+    Info (12023): Found entity 1: ParityCheck_Counter_Adder_FullAdder File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_adder_fulladder.vhd Line: 4
+Info (12128): Elaborating entity "ParityCheck_Counter_Adder_FullAdder" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0|ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_adder.vhd Line: 29
+Warning (12125): Using design file paritycheck_counter_reg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ParityCheck_Counter_Reg-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_reg.vhd Line: 14
+    Info (12023): Found entity 1: ParityCheck_Counter_Reg File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_reg.vhd Line: 4
+Info (12128): Elaborating entity "ParityCheck_Counter_Reg" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter.vhd Line: 45
+Warning (12125): Using design file paritycheck_counter_reg_ffd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ParityCheck_Counter_Reg_FFD-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_reg_ffd.vhd Line: 15
+    Info (12023): Found entity 1: ParityCheck_Counter_Reg_FFD File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_reg_ffd.vhd Line: 4
+Info (12128): Elaborating entity "ParityCheck_Counter_Reg_FFD" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|ParityCheck:ParityCheck_U0|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/paritycheck_counter_reg.vhd Line: 28
+Warning (12125): Using design file counter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Counter-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter.vhd Line: 11
+    Info (12023): Found entity 1: Counter File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter.vhd Line: 4
+Info (12128): Elaborating entity "Counter" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver.vhd Line: 85
+Warning (12125): Using design file counter_adder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Counter_Adder-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_adder.vhd Line: 13
+    Info (12023): Found entity 1: Counter_Adder File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_adder.vhd Line: 4
+Info (12128): Elaborating entity "Counter_Adder" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Adder:Counter_Adder_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter.vhd Line: 34
+Warning (12125): Using design file counter_adder_fulladder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Counter_Adder_FullAdder-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_adder_fulladder.vhd Line: 14
+    Info (12023): Found entity 1: Counter_Adder_FullAdder File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_adder_fulladder.vhd Line: 4
+Info (12128): Elaborating entity "Counter_Adder_FullAdder" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Adder:Counter_Adder_U0|Counter_Adder_FullAdder:Counter_Adder_FullAdder_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_adder.vhd Line: 28
+Warning (12125): Using design file counter_reg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Counter_Reg-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_reg.vhd Line: 14
+    Info (12023): Found entity 1: Counter_Reg File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_reg.vhd Line: 4
+Info (12128): Elaborating entity "Counter_Reg" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter.vhd Line: 45
+Warning (12125): Using design file counter_reg_ffd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Counter_Reg_FFD-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_reg_ffd.vhd Line: 15
+    Info (12023): Found entity 1: Counter_Reg_FFD File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_reg_ffd.vhd Line: 4
+Info (12128): Elaborating entity "Counter_Reg_FFD" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|Counter:Counter_U0|Counter_Reg:Counter_Reg_U0|Counter_Reg_FFD:Counter_Reg_FFD_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/counter_reg.vhd Line: 28
+Warning (12125): Using design file compare8.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Compare8-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/compare8.vhd Line: 11
+    Info (12023): Found entity 1: Compare8 File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/compare8.vhd Line: 4
+Info (12128): Elaborating entity "Compare8" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|Compare8:Compare8_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver.vhd Line: 91
+Warning (12125): Using design file compare7.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Compare7-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/compare7.vhd Line: 11
+    Info (12023): Found entity 1: Compare7 File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/compare7.vhd Line: 4
+Info (12128): Elaborating entity "Compare7" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|Compare7:Compare7_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver.vhd Line: 97
+Warning (12125): Using design file score_serialreceiver_shiftregister.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Score_SerialReceiver_ShiftRegister-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver_shiftregister.vhd Line: 14
+    Info (12023): Found entity 1: Score_SerialReceiver_ShiftRegister File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver_shiftregister.vhd Line: 4
+Info (12128): Elaborating entity "Score_SerialReceiver_ShiftRegister" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver.vhd Line: 102
+Warning (12125): Using design file shiftregister_ffd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ShiftRegister_FFD-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/shiftregister_ffd.vhd Line: 15
+    Info (12023): Found entity 1: ShiftRegister_FFD File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/shiftregister_ffd.vhd Line: 4
+Info (12128): Elaborating entity "ShiftRegister_FFD" for hierarchy "Score_SerialReceiver:Score_SerialReceiver_U0|Score_SerialReceiver_ShiftRegister:Score_SerialReceiver_ShiftRegister_U0|ShiftRegister_FFD:FFD0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_serialreceiver_shiftregister.vhd Line: 30
+Warning (12125): Using design file score_dispatcher.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Score_Dispatcher-behavioral File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_dispatcher.vhd Line: 13
+    Info (12023): Found entity 1: Score_Dispatcher File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/score_dispatcher.vhd Line: 4
+Info (12128): Elaborating entity "Score_Dispatcher" for hierarchy "Score_Dispatcher:Score_Dispatcher_U0" File: C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Serial Score Controller/SerialScoreController.vhd Line: 51
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 25 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Thu May 23 01:39:45 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
+
+

@@ -1,0 +1,57 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity RingBufferControl is
+port(
+	Reset, clk, DAV, CTS, full, empty: in std_logic;
+	Wr, selPG, Wreg, DAC, incPut, incGet: out std_logic
+);
+end RingBufferControl;
+
+architecture behavioral of RingBufferControl is
+
+type STATE_TYPE is (STATE_000, STATE_001, STATE_010, STATE_011, STATE_100, STATE_101, STATE_INCGET);
+
+signal CurrentState, NextState : STATE_TYPE;
+
+begin
+
+-- Flip-Flop's
+CurrentState <= STATE_000 when Reset = '1' else NextState when rising_edge(clk);
+
+-- Generate Next State
+GenerateNextState:
+process (CurrentState, DAV, CTS, full, empty)
+	begin
+		case CurrentState is
+			when STATE_000 => if (DAV = '1' and full = '0') then NextState <= STATE_001;
+										elsif (empty = '0' and CTS = '1') then NextState <= STATE_101;
+											else NextState <= STATE_000;
+												end if;
+											
+			when STATE_001 => NextState <= STATE_010;
+					
+			when STATE_010 => NextState <= STATE_011;
+					
+			when STATE_011 => NextState <= STATE_100;
+					
+			when STATE_100 => if (DAV = '0') then NextState <= STATE_000;
+										else NextState <= STATE_100;
+											end if;
+										
+			when STATE_101 => if (CTS = '0') then NextState <= STATE_INCGET;
+										else NextState <= STATE_101;
+											end if;
+											
+			when STATE_INCGET => NextState <= STATE_000;
+	end case;
+end process;
+
+Wr <= '1' when (CurrentState = STATE_010) else '0';
+selPG <= '1' when (CurrentState = STATE_001 or CurrentState = STATE_010 or CurrentState = STATE_011) else '0';
+Wreg <= '1' when (CurrentState = STATE_101) else '0';
+DAC <= '1' when (CurrentState = STATE_100) else '0';
+incPut <= '1' when (CurrentState = STATE_011) else '0';
+incGet <= '1' when (CurrentState = STATE_INCGET) else '0';
+
+end behavioral;

@@ -1,0 +1,44 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity KeyBoardReader is
+port(
+	ACK: in std_logic;
+	Line: in std_logic_vector(3 downto 0);
+	Reset: in std_logic;
+	CLK: in std_logic;
+	
+	Dval: out std_logic;
+	D: out std_logic_vector(3 downto 0);
+	Col: out std_logic_vector(2 downto 0)
+	
+);
+end KeyBoardReader;
+
+architecture behavioral of KeyBoardReader is
+
+    component KeyDecode is
+        port(
+            Reset: in std_logic;
+	        CLK: in std_logic;
+	        Line: in std_logic_vector(3 downto 0);
+	        Kack: in std_logic;
+	        Col: out std_logic_vector(2 downto 0);
+	        Kval: out std_logic;
+	        K: out std_logic_vector(3 downto 0)
+        );
+        end component;
+
+        begin
+
+            KeyDecode_U0: KeyDecode port map(
+                Reset => Reset,
+	            CLK => CLK,
+	            Line => Line,
+	            Kack => ACK,
+	            Col => Col,
+	            Kval => Dval,
+	            K => D
+            );
+
+end behavioral;

@@ -1,0 +1,60 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do KeyControl_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Control/KeyControl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:56:06 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Control/KeyControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyControl
+# -- Compiling architecture behavioral of KeyControl
+# End time: 21:56:06 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Key Decode/Key Control/KeyControl_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:56:20 on May 18,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Key Decode/Key Control/KeyControl_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyControl_tb
+# -- Compiling architecture behavioral of KeyControl_tb
+# ** Warning: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Key Decode/Key Control/KeyControl_tb.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 21:56:21 on May 18,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vsim work.keycontrol_tb
+# vsim work.keycontrol_tb 
+# Start time: 21:56:23 on May 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.keycontrol_tb(behavioral)
+# Loading work.keycontrol(behavioral)
+add wave -position insertpoint  \
+sim:/keycontrol_tb/Reset_tb \
+sim:/keycontrol_tb/clk_tb \
+sim:/keycontrol_tb/Kack_tb \
+sim:/keycontrol_tb/Kpress_tb \
+sim:/keycontrol_tb/Kval_tb \
+sim:/keycontrol_tb/Kscan_tb
+add wave -position insertpoint  \
+sim:/keycontrol_tb/UUT/CurrentState \
+sim:/keycontrol_tb/UUT/NextState
+run
+run
+run
+# End time: 21:57:32 on May 18,2024, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 0

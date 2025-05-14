@@ -1,0 +1,257 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/simulation/modelsim
+Ecounter
+Z1 w1715891442
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/Counter.vhd
+Z5 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/Counter.vhd
+l0
+L4 1
+V`Z7c?58Z1ISOBM[9OkW;M3
+!s100 h>K<B?:nl>51e>6OWR9jI1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1716046350
+!i10b 1
+Z8 !s108 1716046350.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/Counter.vhd|
+Z10 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/Counter.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 7 counter 0 22 `Z7c?58Z1ISOBM[9OkW;M3
+!i122 0
+l32
+L11 45
+VWZ=lK[TLJEAbAkAFaES?K0
+!s100 UbaL`8DR7^8cBSOg<`<<43
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecounter_adder
+Z13 w1715891556
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_adder.vhd
+Z15 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_adder.vhd
+l0
+L4 1
+VS0f:O_dF5A7Ml=@U_B<?S1
+!s100 8@Pb^LZ9^lMln6jY^M[H?2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_adder.vhd|
+Z17 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_adder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 13 counter_adder 0 22 S0f:O_dF5A7Ml=@U_B<?S1
+!i122 1
+l26
+L13 47
+Vglk@kTh5VBPI[[hmd3hPJ3
+!s100 hRoi:Rj`Kg@[SSBO2>oZc2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ecounter_adder_fulladder
+Z18 w1715891541
+R2
+R3
+!i122 2
+R0
+Z19 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_adder_fulladder.vhd
+Z20 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_adder_fulladder.vhd
+l0
+L4 1
+Vo3WB^_CYfAPDKhnU;2[fI3
+!s100 B7FU2<g2SfJ]ba]ZAYkR^3
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_adder_fulladder.vhd|
+Z22 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_adder_fulladder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 23 counter_adder_fulladder 0 22 o3WB^_CYfAPDKhnU;2[fI3
+!i122 2
+l16
+L14 8
+Vba;QH]WR_KOSm11I=Ae0K1
+!s100 =[OICBkM^U7AKFMcVUWQi2
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Ecounter_reg
+Z23 w1715891486
+R2
+R3
+!i122 3
+R0
+Z24 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_reg.vhd
+Z25 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_reg.vhd
+l0
+L4 1
+V1LOGX;Ff9WimZkY40c4;40
+!s100 zba4OMPfm^ahYG=751f?81
+R6
+31
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_reg.vhd|
+Z27 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_reg.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 11 counter_reg 0 22 1LOGX;Ff9WimZkY40c4;40
+!i122 3
+l26
+L14 51
+VP<7_Jm>5@]?HeO?cHShG=2
+!s100 T4c_FDiaz?R<DeL1[NKT52
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Ecounter_reg_ffd
+Z28 w1715891498
+R2
+R3
+!i122 4
+R0
+Z29 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_reg_ffd.vhd
+Z30 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_reg_ffd.vhd
+l0
+L4 1
+V[F4>k37@9A26zEjeQV6HN1
+!s100 gY16E_Y=ZZamnQgZ[9?[>1
+R6
+31
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_reg_ffd.vhd|
+Z32 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Counter/counter_reg_ffd.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 15 counter_reg_ffd 0 22 [F4>k37@9A26zEjeQV6HN1
+!i122 4
+l17
+L15 7
+Vo@4Bn1WBZ0i15BjIUDk5?2
+!s100 9>kgnBmg;^78fTEVSVL:X2
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Ecounter_tb
+Z33 w1716046255
+R2
+R3
+!i122 5
+R0
+Z34 8C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Counter/Counter_tb.vhd
+Z35 FC:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Counter/Counter_tb.vhd
+l0
+L4 1
+VD8SHPHITSb3XUQGNYm1jX0
+!s100 YKeY_I_d@N2Kj2LJcQ68z3
+R6
+32
+Z36 !s110 1716046377
+!i10b 1
+Z37 !s108 1716046377.000000
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Counter/Counter_tb.vhd|
+!s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Counter/Counter_tb.vhd|
+!i113 1
+Z39 o-work work
+R12
+Abehavioral
+R2
+R3
+DEx4 work 10 counter_tb 0 22 D8SHPHITSb3XUQGNYm1jX0
+!i122 5
+l25
+L7 54
+VHTU9i]oQ^4@2hQW41mj?K3
+!s100 m?J1DeEmWiYC^EPOBm1]21
+R6
+32
+R36
+!i10b 1
+R37
+R38
+Z40 !s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Counter/Counter_tb.vhd|
+!i113 1
+R39
+R12

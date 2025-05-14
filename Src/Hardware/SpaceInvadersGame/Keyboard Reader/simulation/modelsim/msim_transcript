@@ -1,0 +1,447 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do KeyboardReader_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/KeyboardReader.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/KeyboardReader.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyboardReader
+# -- Compiling architecture behavioral of KeyboardReader
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keydecode.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keydecode.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyDecode
+# -- Compiling architecture behavioral of KeyDecode
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan
+# -- Compiling architecture behavioral of KeyScan
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan_Cont
+# -- Compiling architecture behavioral of KeyScan_Cont
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan_Cont_Adder
+# -- Compiling architecture behavioral of KeyScan_Cont_Adder
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_fulladder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_fulladder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan_Cont_FullAdder
+# -- Compiling architecture behavioral of KeyScan_Cont_FullAdder
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan_Cont_Reg
+# -- Compiling architecture behavioral of KeyScan_Cont_Reg
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_cont_ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan_Cont_FFD
+# -- Compiling architecture behavioral of KeyScan_Cont_FFD
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_decoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan_Decoder
+# -- Compiling architecture behavioral of KeyScan_Decoder
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_mux.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keyscan_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan_Mux
+# -- Compiling architecture behavioral of KeyScan_Mux
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keycontrol.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:01 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/keycontrol.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyControl
+# -- Compiling architecture behavioral of KeyControl
+# End time: 11:17:01 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBuffer
+# -- Compiling architecture behavioral of RingBuffer
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffercontrol.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ringbuffercontrol.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBufferControl
+# -- Compiling architecture behavioral of RingBufferControl
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/memoryaddresscontrol.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/memoryaddresscontrol.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemoryAddressControl
+# -- Compiling architecture behavioral of MemoryAddressControl
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont
+# -- Compiling architecture behavioral of MAC_Cont
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont_Adder
+# -- Compiling architecture behavioral of MAC_Cont_Adder
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_fulladder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_fulladder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont_FullAdder
+# -- Compiling architecture behavioral of MAC_Cont_FullAdder
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_cont_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont_Reg
+# -- Compiling architecture behavioral of MAC_Cont_Reg
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_FFD
+# -- Compiling architecture behavioral of MAC_FFD
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_mux.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Mux
+# -- Compiling architecture behavioral of MAC_Mux
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_compare.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/mac_compare.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Compare
+# -- Compiling architecture behavioral of MAC_Compare
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ram.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/ram.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputbuffer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputbuffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OutputBuffer
+# -- Compiling architecture behavioral of OutputBuffer
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/buffercontrol.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/buffercontrol.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BufferControl
+# -- Compiling architecture behavioral of BufferControl
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:02 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OutputRegister
+# -- Compiling architecture behavioral of OutputRegister
+# End time: 11:17:02 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister_ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:03 on May 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/outputregister_ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OutputRegister_FFD
+# -- Compiling architecture behavioral of OutputRegister_FFD
+# End time: 11:17:03 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/KeyboardReader_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:19 on May 20,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/KeyboardReader_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyboardReader_tb
+# -- Compiling architecture behavioral of KeyboardReader_tb
+# ** Warning: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/KeyboardReader_tb.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 11:17:19 on May 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.keyboardreader_tb
+# vsim work.keyboardreader_tb 
+# Start time: 11:17:23 on May 20,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.keyboardreader_tb(behavioral)
+# Loading work.keyboardreader(behavioral)
+# Loading work.keydecode(behavioral)
+# Loading work.keyscan(behavioral)
+# Loading work.keyscan_cont(behavioral)
+# Loading work.keyscan_cont_adder(behavioral)
+# Loading work.keyscan_cont_fulladder(behavioral)
+# Loading work.keyscan_cont_reg(behavioral)
+# Loading work.keyscan_cont_ffd(behavioral)
+# Loading work.keyscan_decoder(behavioral)
+# Loading work.keyscan_mux(behavioral)
+# Loading work.keycontrol(behavioral)
+# Loading work.ringbuffer(behavioral)
+# Loading work.ringbuffercontrol(behavioral)
+# Loading work.memoryaddresscontrol(behavioral)
+# Loading work.mac_cont(behavioral)
+# Loading work.mac_cont_adder(behavioral)
+# Loading work.mac_cont_fulladder(behavioral)
+# Loading work.mac_cont_reg(behavioral)
+# Loading work.mac_ffd(behavioral)
+# Loading work.mac_mux(behavioral)
+# Loading work.mac_compare(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading work.ram(behavioral)
+# Loading work.outputbuffer(behavioral)
+# Loading work.buffercontrol(behavioral)
+# Loading work.outputregister(behavioral)
+# Loading work.outputregister_ffd(behavioral)
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/Reset_tb \
+sim:/keyboardreader_tb/clk_tb \
+sim:/keyboardreader_tb/ACK_tb \
+sim:/keyboardreader_tb/Dval_tb \
+sim:/keyboardreader_tb/Line_tb \
+sim:/keyboardreader_tb/Q_tb \
+sim:/keyboardreader_tb/Col_tb
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/Reset \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/CLK \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/Line \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/Kack \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/Col \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/Kval \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/K \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/term0 \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/term1
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/DAV \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/CTS \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/clk \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/Reset \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/D \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/Q \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/Wreg \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/DAC
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/D \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/Load \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/Reset \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/ACK \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/clk \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/Q \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/OBfree \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/Dval \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/term0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossível localizar o módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+run
+run
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/KeyControl_Unit0/CurrentState \
+sim:/keyboardreader_tb/UUT/KeyDecode_U0/KeyControl_Unit0/NextState
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/RingBufferControl_U0/CurrentState \
+sim:/keyboardreader_tb/UUT/RingBuffer_U0/RingBufferControl_U0/NextState
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/BufferControl_U0/CurrentState \
+sim:/keyboardreader_tb/UUT/OutputBuffer_U0/BufferControl_U0/NextState
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: Impossível localizar o módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/UUT/RingBuffer_U0/RAM_U0
+run
+# End time: 12:34:19 on May 20,2024, Elapsed time: 1:16:56
+# Errors: 0, Warnings: 4

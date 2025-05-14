@@ -1,0 +1,206 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do RingBuffer_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/RingBuffer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/RingBuffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBuffer
+# -- Compiling architecture behavioral of RingBuffer
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/ringbuffercontrol.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/ringbuffercontrol.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBufferControl
+# -- Compiling architecture behavioral of RingBufferControl
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/memoryaddresscontrol.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/memoryaddresscontrol.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemoryAddressControl
+# -- Compiling architecture behavioral of MemoryAddressControl
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_cont.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_cont.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont
+# -- Compiling architecture behavioral of MAC_Cont
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_cont_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_cont_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont_Adder
+# -- Compiling architecture behavioral of MAC_Cont_Adder
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_cont_fulladder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_cont_fulladder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont_FullAdder
+# -- Compiling architecture behavioral of MAC_Cont_FullAdder
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_cont_reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_cont_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Cont_Reg
+# -- Compiling architecture behavioral of MAC_Cont_Reg
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_FFD
+# -- Compiling architecture behavioral of MAC_FFD
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_mux.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Mux
+# -- Compiling architecture behavioral of MAC_Mux
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_compare.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/mac_compare.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAC_Compare
+# -- Compiling architecture behavioral of MAC_Compare
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/ram.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:03:44 on May 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/ram.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+# End time: 12:03:44 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/RingBuffer_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:04:30 on May 19,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/RingBuffer_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBuffer_tb
+# -- Compiling architecture behavioral of RingBuffer_tb
+# ** Warning: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/RingBuffer_tb.vhd(18): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error (suppressible): C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/RingBuffer_tb.vhd(28): (vcom-1141) Identifier "RingBuffer" does not identify a component declaration.
+# ** Note: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/RingBuffer_tb.vhd(85): VHDL Compiler exiting
+# End time: 12:04:30 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/RingBuffer_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:13 on May 19,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/RingBuffer_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBuffer_tb
+# -- Compiling architecture behavioral of RingBuffer_tb
+# ** Warning: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/RingBuffer_tb.vhd(18): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 12:05:13 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.ringbuffer_tb
+# vsim work.ringbuffer_tb 
+# Start time: 12:05:20 on May 19,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ringbuffer_tb(behavioral)
+# Loading work.ringbuffer(behavioral)
+# Loading work.ringbuffercontrol(behavioral)
+# Loading work.memoryaddresscontrol(behavioral)
+# Loading work.mac_cont(behavioral)
+# Loading work.mac_cont_adder(behavioral)
+# Loading work.mac_cont_fulladder(behavioral)
+# Loading work.mac_cont_reg(behavioral)
+# Loading work.mac_ffd(behavioral)
+# Loading work.mac_mux(behavioral)
+# Loading work.mac_compare(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading work.ram(behavioral)
+add wave -position insertpoint  \
+sim:/ringbuffer_tb/Reset_tb \
+sim:/ringbuffer_tb/clk_tb \
+sim:/ringbuffer_tb/DAV_tb \
+sim:/ringbuffer_tb/CTS_tb \
+sim:/ringbuffer_tb/Wreg_tb \
+sim:/ringbuffer_tb/DAC_tb \
+sim:/ringbuffer_tb/D_tb \
+sim:/ringbuffer_tb/Q_tb
+add wave -position insertpoint  \
+sim:/ringbuffer_tb/UUT/RingBufferControl_U0/CurrentState \
+sim:/ringbuffer_tb/UUT/RingBufferControl_U0/NextState
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/UUT/RAM_U0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/UUT/RAM_U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/UUT/RAM_U0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/UUT/RAM_U0
+run
+run
+# End time: 12:15:36 on May 19,2024, Elapsed time: 0:10:16
+# Errors: 0, Warnings: 4

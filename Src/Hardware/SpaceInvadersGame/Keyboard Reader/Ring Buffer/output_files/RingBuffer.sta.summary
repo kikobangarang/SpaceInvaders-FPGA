@@ -1,0 +1,53 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.552
+TNS   : -9.507
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.325
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -17.664
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.286
+TNS   : -8.107
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -17.664
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.712
+TNS   : -2.146
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.073
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -16.184
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : 0.272
+TNS   : 0.000
+
+------------------------------------------------------------

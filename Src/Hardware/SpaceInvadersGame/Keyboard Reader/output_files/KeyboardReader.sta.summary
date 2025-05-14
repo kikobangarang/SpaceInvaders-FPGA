@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState'
+Slack : -4.731
+TNS   : -18.723
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.235
+TNS   : -20.635
+
+Type  : Slow 1200mV 85C Model Setup 'RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : -1.122
+TNS   : -16.310
+
+Type  : Slow 1200mV 85C Model Hold 'RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : -0.332
+TNS   : -1.829
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState'
+Slack : 1.052
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -27.440
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState'
+Slack : -1.222
+TNS   : -4.888
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : 0.222
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState'
+Slack : -4.159
+TNS   : -16.447
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.837
+TNS   : -16.914
+
+Type  : Slow 1200mV 0C Model Setup 'RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : -0.948
+TNS   : -13.925
+
+Type  : Slow 1200mV 0C Model Hold 'RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : -0.171
+TNS   : -0.556
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState'
+Slack : 0.984
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -27.440
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState'
+Slack : -1.222
+TNS   : -4.888
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState'
+Slack : -2.054
+TNS   : -8.095
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.108
+TNS   : -4.335
+
+Type  : Fast 1200mV 0C Model Setup 'RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : -0.091
+TNS   : -0.131
+
+Type  : Fast 1200mV 0C Model Hold 'RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : -0.038
+TNS   : -0.087
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.113
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -23.371
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0|Q'
+Slack : 0.228
+TNS   : 0.000
+
+------------------------------------------------------------

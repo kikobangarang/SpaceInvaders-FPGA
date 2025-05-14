@@ -1,0 +1,643 @@
+|KeyboardReader
+Line[0] => KeyDecode:KeyDecode_U0.Line[0]
+Line[1] => KeyDecode:KeyDecode_U0.Line[1]
+Line[2] => KeyDecode:KeyDecode_U0.Line[2]
+Line[3] => KeyDecode:KeyDecode_U0.Line[3]
+Reset => KeyDecode:KeyDecode_U0.Reset
+Reset => RingBuffer:RingBuffer_U0.Reset
+Reset => OutputBuffer:OutputBuffer_U0.Reset
+clk => KeyDecode:KeyDecode_U0.clk
+clk => RingBuffer:RingBuffer_U0.clk
+clk => OutputBuffer:OutputBuffer_U0.clk
+ACK => OutputBuffer:OutputBuffer_U0.ACK
+Dval << OutputBuffer:OutputBuffer_U0.Dval
+Col[0] << KeyDecode:KeyDecode_U0.Col[0]
+Col[1] << KeyDecode:KeyDecode_U0.Col[1]
+Col[2] << KeyDecode:KeyDecode_U0.Col[2]
+Q[0] << OutputBuffer:OutputBuffer_U0.Q[0]
+Q[1] << OutputBuffer:OutputBuffer_U0.Q[1]
+Q[2] << OutputBuffer:OutputBuffer_U0.Q[2]
+Q[3] << OutputBuffer:OutputBuffer_U0.Q[3]
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0
+Reset => KeyScan:KeyScan_Unit0.Reset
+Reset => KeyControl:KeyControl_Unit0.Reset
+CLK => KeyScan:KeyScan_Unit0.clk
+CLK => KeyControl:KeyControl_Unit0.clk
+Line[0] => KeyScan:KeyScan_Unit0.Line[0]
+Line[1] => KeyScan:KeyScan_Unit0.Line[1]
+Line[2] => KeyScan:KeyScan_Unit0.Line[2]
+Line[3] => KeyScan:KeyScan_Unit0.Line[3]
+Kack => KeyControl:KeyControl_Unit0.Kack
+Col[0] <= KeyScan:KeyScan_Unit0.Col[0]
+Col[1] <= KeyScan:KeyScan_Unit0.Col[1]
+Col[2] <= KeyScan:KeyScan_Unit0.Col[2]
+Kval <= KeyControl:KeyControl_Unit0.Kval
+K[0] <= KeyScan:KeyScan_Unit0.K[0]
+K[1] <= KeyScan:KeyScan_Unit0.K[1]
+K[2] <= KeyScan:KeyScan_Unit0.K[2]
+K[3] <= KeyScan:KeyScan_Unit0.K[3]
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0
+Kscan => KeyScan_Cont:KeyScan_Cont_U0.CE
+Line[0] => KeyScan_Mux:KeyScan_Mux_U0.Line[0]
+Line[1] => KeyScan_Mux:KeyScan_Mux_U0.Line[1]
+Line[2] => KeyScan_Mux:KeyScan_Mux_U0.Line[2]
+Line[3] => KeyScan_Mux:KeyScan_Mux_U0.Line[3]
+clk => KeyScan_Cont:KeyScan_Cont_U0.clk
+Reset => KeyScan_Cont:KeyScan_Cont_U0.Reset
+K[0] <= KeyScan_Cont:KeyScan_Cont_U0.Q[0]
+K[1] <= KeyScan_Cont:KeyScan_Cont_U0.Q[1]
+K[2] <= KeyScan_Cont:KeyScan_Cont_U0.Q[2]
+K[3] <= KeyScan_Cont:KeyScan_Cont_U0.Q[3]
+Kpress <= KeyScan_Mux:KeyScan_Mux_U0.Y
+Col[0] <= KeyScan_Decoder:KeyScan_Decoder_U0.Col[0]
+Col[1] <= KeyScan_Decoder:KeyScan_Decoder_U0.Col[1]
+Col[2] <= KeyScan_Decoder:KeyScan_Decoder_U0.Col[2]
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0
+CE => KeyScan_Cont_Adder:Adder_U0.B[0]
+Reset => KeyScan_Cont_Reg:Reg_U0.Reset
+clk => KeyScan_Cont_Reg:Reg_U0.clk
+Q[0] <= KeyScan_Cont_Reg:Reg_U0.Q[0]
+Q[1] <= KeyScan_Cont_Reg:Reg_U0.Q[1]
+Q[2] <= KeyScan_Cont_Reg:Reg_U0.Q[2]
+Q[3] <= KeyScan_Cont_Reg:Reg_U0.Q[3]
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Adder:Adder_U0
+A[0] => KeyScan_Cont_FullAdder:FullAdder_U0.A
+A[1] => KeyScan_Cont_FullAdder:FullAdder_U1.A
+A[2] => KeyScan_Cont_FullAdder:FullAdder_U2.A
+A[3] => KeyScan_Cont_FullAdder:FullAdder_U3.A
+B[0] => KeyScan_Cont_FullAdder:FullAdder_U0.B
+B[1] => KeyScan_Cont_FullAdder:FullAdder_U1.B
+B[2] => KeyScan_Cont_FullAdder:FullAdder_U2.B
+B[3] => KeyScan_Cont_FullAdder:FullAdder_U3.B
+CYi => KeyScan_Cont_FullAdder:FullAdder_U0.CYi
+S[0] <= KeyScan_Cont_FullAdder:FullAdder_U0.R
+S[1] <= KeyScan_Cont_FullAdder:FullAdder_U1.R
+S[2] <= KeyScan_Cont_FullAdder:FullAdder_U2.R
+S[3] <= KeyScan_Cont_FullAdder:FullAdder_U3.R
+C4 <= KeyScan_Cont_FullAdder:FullAdder_U3.CyOut
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Adder:Adder_U0|KeyScan_Cont_FullAdder:FullAdder_U0
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Adder:Adder_U0|KeyScan_Cont_FullAdder:FullAdder_U1
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Adder:Adder_U0|KeyScan_Cont_FullAdder:FullAdder_U2
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Adder:Adder_U0|KeyScan_Cont_FullAdder:FullAdder_U3
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Reg:Reg_U0
+D[0] => KeyScan_Cont_FFD:FFD3.D
+D[1] => KeyScan_Cont_FFD:FFD2.D
+D[2] => KeyScan_Cont_FFD:FFD1.D
+D[3] => KeyScan_Cont_FFD:FFD0.D
+clk => KeyScan_Cont_FFD:FFD0.clk
+clk => KeyScan_Cont_FFD:FFD1.clk
+clk => KeyScan_Cont_FFD:FFD2.clk
+clk => KeyScan_Cont_FFD:FFD3.clk
+E => KeyScan_Cont_FFD:FFD0.EN
+E => KeyScan_Cont_FFD:FFD1.EN
+E => KeyScan_Cont_FFD:FFD2.EN
+E => KeyScan_Cont_FFD:FFD3.EN
+Reset => KeyScan_Cont_FFD:FFD0.Reset
+Reset => KeyScan_Cont_FFD:FFD1.Reset
+Reset => KeyScan_Cont_FFD:FFD2.Reset
+Reset => KeyScan_Cont_FFD:FFD3.Reset
+Q[0] <= KeyScan_Cont_FFD:FFD3.Q
+Q[1] <= KeyScan_Cont_FFD:FFD2.Q
+Q[2] <= KeyScan_Cont_FFD:FFD1.Q
+Q[3] <= KeyScan_Cont_FFD:FFD0.Q
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Reg:Reg_U0|KeyScan_Cont_FFD:FFD0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Reg:Reg_U0|KeyScan_Cont_FFD:FFD1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Reg:Reg_U0|KeyScan_Cont_FFD:FFD2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Cont:KeyScan_Cont_U0|KeyScan_Cont_Reg:Reg_U0|KeyScan_Cont_FFD:FFD3
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Decoder:KeyScan_Decoder_U0
+S[0] => Col.IN0
+S[0] => Col.IN0
+S[0] => Col.IN0
+S[1] => Col.IN1
+S[1] => Col.IN1
+S[1] => Col.IN1
+Col[0] <= Col.DB_MAX_OUTPUT_PORT_TYPE
+Col[1] <= Col.DB_MAX_OUTPUT_PORT_TYPE
+Col[2] <= Col.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyScan:KeyScan_Unit0|KeyScan_Mux:KeyScan_Mux_U0
+Line[0] => Y.IN1
+Line[1] => Y.IN1
+Line[2] => Y.IN1
+Line[3] => Y.IN1
+S[0] => Y.IN0
+S[0] => Y.IN0
+S[0] => Y.IN0
+S[0] => Y.IN0
+S[1] => Y.IN1
+S[1] => Y.IN1
+S[1] => Y.IN1
+S[1] => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|KeyDecode:KeyDecode_U0|KeyControl:KeyControl_Unit0
+Reset => CurrentState~3.DATAIN
+CLK => CurrentState~1.DATAIN
+Kack => Selector2.IN2
+Kack => GenerateNextState.IN0
+Kack => Selector1.IN1
+Kpress => Selector1.IN2
+Kpress => Selector0.IN1
+Kpress => GenerateNextState.IN1
+Kval <= Kval.DB_MAX_OUTPUT_PORT_TYPE
+Kscan <= Kscan.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0
+DAV => RingBufferControl:RingBufferControl_U0.DAV
+CTS => RingBufferControl:RingBufferControl_U0.CTS
+clk => RingBufferControl:RingBufferControl_U0.clk
+clk => MemoryAddressControl:MemoryAddressControl_U0.clk
+Reset => RingBufferControl:RingBufferControl_U0.Reset
+Reset => MemoryAddressControl:MemoryAddressControl_U0.Reset
+D[0] => RAM:RAM_U0.din[0]
+D[1] => RAM:RAM_U0.din[1]
+D[2] => RAM:RAM_U0.din[2]
+D[3] => RAM:RAM_U0.din[3]
+Q[0] <= RAM:RAM_U0.dout[0]
+Q[1] <= RAM:RAM_U0.dout[1]
+Q[2] <= RAM:RAM_U0.dout[2]
+Q[3] <= RAM:RAM_U0.dout[3]
+Wreg <= RingBufferControl:RingBufferControl_U0.Wreg
+DAC <= RingBufferControl:RingBufferControl_U0.DAC
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|RingBufferControl:RingBufferControl_U0
+Reset => CurrentState~3.DATAIN
+clk => CurrentState~1.DATAIN
+DAV => GenerateNextState.IN0
+DAV => Selector1.IN3
+DAV => GenerateNextState.IN0
+DAV => Selector0.IN1
+CTS => GenerateNextState.IN1
+CTS => Selector2.IN3
+CTS => Selector0.IN3
+full => GenerateNextState.IN1
+empty => GenerateNextState.IN1
+Wr <= Wr.DB_MAX_OUTPUT_PORT_TYPE
+selPG <= selPG.DB_MAX_OUTPUT_PORT_TYPE
+Wreg <= Wreg.DB_MAX_OUTPUT_PORT_TYPE
+DAC <= DAC.DB_MAX_OUTPUT_PORT_TYPE
+incPut <= incPut.DB_MAX_OUTPUT_PORT_TYPE
+incGet <= incGet.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0
+putget => MAC_Mux:MAC_Mux_U0.putGet
+putget => MAC_FFD:MAC_FFD_U0.D
+incPut => MAC_Cont:MAC_Cont_U0.CE
+incGet => MAC_Cont:MAC_Cont_U1.CE
+Reset => MAC_Cont:MAC_Cont_U0.Reset
+Reset => MAC_Cont:MAC_Cont_U1.Reset
+Reset => MAC_FFD:MAC_FFD_U0.Reset
+clk => MAC_Cont:MAC_Cont_U0.clk
+clk => MAC_Cont:MAC_Cont_U1.clk
+clk => MAC_FFD:MAC_FFD_U0.clk
+full <= full.DB_MAX_OUTPUT_PORT_TYPE
+empty <= empty.DB_MAX_OUTPUT_PORT_TYPE
+Address[0] <= MAC_Mux:MAC_Mux_U0.Address[0]
+Address[1] <= MAC_Mux:MAC_Mux_U0.Address[1]
+Address[2] <= MAC_Mux:MAC_Mux_U0.Address[2]
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0
+CE => MAC_Cont_Adder:Adder_0.B[0]
+Reset => MAC_Cont_Reg:MAC_Cont_Reg_U0.Reset
+clk => MAC_Cont_Reg:MAC_Cont_Reg_U0.clk
+Q[0] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[0]
+Q[1] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[1]
+Q[2] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[2]
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Adder:Adder_0
+A[0] => MAC_Cont_FullAdder:FullAdder_U0.A
+A[1] => MAC_Cont_FullAdder:FullAdder_U1.A
+A[2] => MAC_Cont_FullAdder:FullAdder_U2.A
+B[0] => MAC_Cont_FullAdder:FullAdder_U0.B
+B[1] => MAC_Cont_FullAdder:FullAdder_U1.B
+B[2] => MAC_Cont_FullAdder:FullAdder_U2.B
+CYi => MAC_Cont_FullAdder:FullAdder_U0.CYi
+S[0] <= MAC_Cont_FullAdder:FullAdder_U0.R
+S[1] <= MAC_Cont_FullAdder:FullAdder_U1.R
+S[2] <= MAC_Cont_FullAdder:FullAdder_U2.R
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U0
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U1
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U2
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0
+D[0] => MAC_FFD:FFD_U2.D
+D[1] => MAC_FFD:FFD_U1.D
+D[2] => MAC_FFD:FFD_U0.D
+clk => MAC_FFD:FFD_U0.clk
+clk => MAC_FFD:FFD_U1.clk
+clk => MAC_FFD:FFD_U2.clk
+E => MAC_FFD:FFD_U0.EN
+E => MAC_FFD:FFD_U1.EN
+E => MAC_FFD:FFD_U2.EN
+Reset => MAC_FFD:FFD_U0.Reset
+Reset => MAC_FFD:FFD_U1.Reset
+Reset => MAC_FFD:FFD_U2.Reset
+Q[0] <= MAC_FFD:FFD_U2.Q
+Q[1] <= MAC_FFD:FFD_U1.Q
+Q[2] <= MAC_FFD:FFD_U0.Q
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1
+CE => MAC_Cont_Adder:Adder_0.B[0]
+Reset => MAC_Cont_Reg:MAC_Cont_Reg_U0.Reset
+clk => MAC_Cont_Reg:MAC_Cont_Reg_U0.clk
+Q[0] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[0]
+Q[1] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[1]
+Q[2] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[2]
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Adder:Adder_0
+A[0] => MAC_Cont_FullAdder:FullAdder_U0.A
+A[1] => MAC_Cont_FullAdder:FullAdder_U1.A
+A[2] => MAC_Cont_FullAdder:FullAdder_U2.A
+B[0] => MAC_Cont_FullAdder:FullAdder_U0.B
+B[1] => MAC_Cont_FullAdder:FullAdder_U1.B
+B[2] => MAC_Cont_FullAdder:FullAdder_U2.B
+CYi => MAC_Cont_FullAdder:FullAdder_U0.CYi
+S[0] <= MAC_Cont_FullAdder:FullAdder_U0.R
+S[1] <= MAC_Cont_FullAdder:FullAdder_U1.R
+S[2] <= MAC_Cont_FullAdder:FullAdder_U2.R
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U0
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U1
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U2
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Reg:MAC_Cont_Reg_U0
+D[0] => MAC_FFD:FFD_U2.D
+D[1] => MAC_FFD:FFD_U1.D
+D[2] => MAC_FFD:FFD_U0.D
+clk => MAC_FFD:FFD_U0.clk
+clk => MAC_FFD:FFD_U1.clk
+clk => MAC_FFD:FFD_U2.clk
+E => MAC_FFD:FFD_U0.EN
+E => MAC_FFD:FFD_U1.EN
+E => MAC_FFD:FFD_U2.EN
+Reset => MAC_FFD:FFD_U0.Reset
+Reset => MAC_FFD:FFD_U1.Reset
+Reset => MAC_FFD:FFD_U2.Reset
+Q[0] <= MAC_FFD:FFD_U2.Q
+Q[1] <= MAC_FFD:FFD_U1.Q
+Q[2] <= MAC_FFD:FFD_U0.Q
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Mux:MAC_Mux_U0
+incPutOut[0] => Address.DATAB
+incPutOut[1] => Address.DATAB
+incPutOut[2] => Address.DATAB
+incGetOut[0] => Address.DATAA
+incGetOut[1] => Address.DATAA
+incGetOut[2] => Address.DATAA
+putGet => Address.OUTPUTSELECT
+putGet => Address.OUTPUTSELECT
+putGet => Address.OUTPUTSELECT
+Address[0] <= Address.DB_MAX_OUTPUT_PORT_TYPE
+Address[1] <= Address.DB_MAX_OUTPUT_PORT_TYPE
+Address[2] <= Address.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_Compare:MAC_Compare_U0
+incPutOut[0] => Q.IN0
+incPutOut[1] => Q.IN0
+incPutOut[2] => Q.IN0
+incGetOut[0] => Q.IN1
+incGetOut[1] => Q.IN1
+incGetOut[2] => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|MemoryAddressControl:MemoryAddressControl_U0|MAC_FFD:MAC_FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|RingBuffer:RingBuffer_U0|RAM:RAM_U0
+address[0] => ram.RADDR
+address[0] => ram.WADDR
+address[1] => ram.RADDR1
+address[1] => ram.WADDR1
+address[2] => ram.RADDR2
+address[2] => ram.WADDR2
+wr => ram.WE
+din[0] => ram.DATAIN
+din[1] => ram.DATAIN1
+din[2] => ram.DATAIN2
+din[3] => ram.DATAIN3
+dout[0] <= ram.DATAOUT
+dout[1] <= ram.DATAOUT1
+dout[2] <= ram.DATAOUT2
+dout[3] <= ram.DATAOUT3
+
+
+|KeyboardReader|OutputBuffer:OutputBuffer_U0
+D[0] => OutputRegister:OutputRegister_U0.D[0]
+D[1] => OutputRegister:OutputRegister_U0.D[1]
+D[2] => OutputRegister:OutputRegister_U0.D[2]
+D[3] => OutputRegister:OutputRegister_U0.D[3]
+Load => BufferControl:BufferControl_U0.Load
+Reset => BufferControl:BufferControl_U0.Reset
+Reset => OutputRegister:OutputRegister_U0.Reset
+ACK => BufferControl:BufferControl_U0.ACK
+clk => BufferControl:BufferControl_U0.clk
+Q[0] <= OutputRegister:OutputRegister_U0.Q[0]
+Q[1] <= OutputRegister:OutputRegister_U0.Q[1]
+Q[2] <= OutputRegister:OutputRegister_U0.Q[2]
+Q[3] <= OutputRegister:OutputRegister_U0.Q[3]
+OBfree <= BufferControl:BufferControl_U0.OBfree
+Dval <= BufferControl:BufferControl_U0.Dval
+
+
+|KeyboardReader|OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0
+Reset => CurrentState.ACLR
+clk => CurrentState.CLK
+Load => NextState.DATAB
+Load => GenerateNextState.IN0
+ACK => GenerateNextState.IN1
+OBfree <= CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+Wreg <= CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+Dval <= CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|OutputBuffer:OutputBuffer_U0|OutputRegister:OutputRegister_U0
+D[0] => OutputRegister_FFD:FFD_U3.D
+D[1] => OutputRegister_FFD:FFD_U2.D
+D[2] => OutputRegister_FFD:FFD_U1.D
+D[3] => OutputRegister_FFD:FFD_U0.D
+clk => OutputRegister_FFD:FFD_U0.clk
+clk => OutputRegister_FFD:FFD_U1.clk
+clk => OutputRegister_FFD:FFD_U2.clk
+clk => OutputRegister_FFD:FFD_U3.clk
+E => OutputRegister_FFD:FFD_U0.EN
+E => OutputRegister_FFD:FFD_U1.EN
+E => OutputRegister_FFD:FFD_U2.EN
+E => OutputRegister_FFD:FFD_U3.EN
+Reset => OutputRegister_FFD:FFD_U0.Reset
+Reset => OutputRegister_FFD:FFD_U1.Reset
+Reset => OutputRegister_FFD:FFD_U2.Reset
+Reset => OutputRegister_FFD:FFD_U3.Reset
+Q[0] <= OutputRegister_FFD:FFD_U3.Q
+Q[1] <= OutputRegister_FFD:FFD_U2.Q
+Q[2] <= OutputRegister_FFD:FFD_U1.Q
+Q[3] <= OutputRegister_FFD:FFD_U0.Q
+
+
+|KeyboardReader|OutputBuffer:OutputBuffer_U0|OutputRegister:OutputRegister_U0|OutputRegister_FFD:FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|OutputBuffer:OutputBuffer_U0|OutputRegister:OutputRegister_U0|OutputRegister_FFD:FFD_U1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|OutputBuffer:OutputBuffer_U0|OutputRegister:OutputRegister_U0|OutputRegister_FFD:FFD_U2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyboardReader|OutputBuffer:OutputBuffer_U0|OutputRegister:OutputRegister_U0|OutputRegister_FFD:FFD_U3
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

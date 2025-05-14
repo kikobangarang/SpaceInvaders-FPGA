@@ -1,0 +1,280 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do SerialScoreController_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/SerialScoreController.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:40 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/SerialScoreController.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SerialScoreController
+# -- Compiling architecture behavioral of SerialScoreController
+# End time: 19:22:40 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/serialreceiver.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:40 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/serialreceiver.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SerialReceiver
+# -- Compiling architecture behavioral of SerialReceiver
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/serialcontrol.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/serialcontrol.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SerialControl
+# -- Compiling architecture behavioral of SerialControl
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ParityCheck
+# -- Compiling architecture behavioral of ParityCheck
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ParityCheck_Counter
+# -- Compiling architecture behavioral of ParityCheck_Counter
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ParityCheck_Counter_Adder
+# -- Compiling architecture behavioral of ParityCheck_Counter_Adder
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter_adder_fulladder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter_adder_fulladder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ParityCheck_Counter_Adder_FullAdder
+# -- Compiling architecture behavioral of ParityCheck_Counter_Adder_FullAdder
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter_reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ParityCheck_Counter_Reg
+# -- Compiling architecture behavioral of ParityCheck_Counter_Reg
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter_reg_ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/paritycheck_counter_reg_ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ParityCheck_Counter_Reg_FFD
+# -- Compiling architecture behavioral of ParityCheck_Counter_Reg_FFD
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Counter
+# -- Compiling architecture behavioral of Counter
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Counter_Adder
+# -- Compiling architecture behavioral of Counter_Adder
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter_adder_fulladder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter_adder_fulladder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Counter_Adder_FullAdder
+# -- Compiling architecture behavioral of Counter_Adder_FullAdder
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter_reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Counter_Reg
+# -- Compiling architecture behavioral of Counter_Reg
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter_reg_ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/counter_reg_ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Counter_Reg_FFD
+# -- Compiling architecture behavioral of Counter_Reg_FFD
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/compare8.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/compare8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Compare8
+# -- Compiling architecture behavioral of Compare8
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/compare7.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:41 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/compare7.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Compare7
+# -- Compiling architecture behavioral of Compare7
+# End time: 19:22:41 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/shiftregister.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:42 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/shiftregister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftRegister
+# -- Compiling architecture behavioral of ShiftRegister
+# End time: 19:22:42 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/shiftregister_ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:42 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/shiftregister_ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftRegister_FFD
+# -- Compiling architecture behavioral of ShiftRegister_FFD
+# End time: 19:22:42 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/score_dispatcher.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:42 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/score_dispatcher.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Score_Dispatcher
+# -- Compiling architecture behavioral of Score_Dispatcher
+# End time: 19:22:42 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/SerialScoreController_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:50 on May 18,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/SerialScoreController_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SerialScoreController_tb
+# -- Compiling architecture behavioral of SerialScoreController_tb
+# ** Warning: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/SerialScoreController_tb.vhd(18): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 19:22:50 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.serialscorecontroller_tb
+# vsim work.serialscorecontroller_tb 
+# Start time: 19:22:53 on May 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.serialscorecontroller_tb(behavioral)
+# Loading work.serialscorecontroller(behavioral)
+# Loading work.serialreceiver(behavioral)
+# Loading work.serialcontrol(behavioral)
+# Loading work.paritycheck(behavioral)
+# Loading work.paritycheck_counter(behavioral)
+# Loading work.paritycheck_counter_adder(behavioral)
+# Loading work.paritycheck_counter_adder_fulladder(behavioral)
+# Loading work.paritycheck_counter_reg(behavioral)
+# Loading work.paritycheck_counter_reg_ffd(behavioral)
+# Loading work.counter(behavioral)
+# Loading work.counter_adder(behavioral)
+# Loading work.counter_adder_fulladder(behavioral)
+# Loading work.counter_reg(behavioral)
+# Loading work.counter_reg_ffd(behavioral)
+# Loading work.compare8(behavioral)
+# Loading work.compare7(behavioral)
+# Loading work.shiftregister(behavioral)
+# Loading work.shiftregister_ffd(behavioral)
+# Loading work.score_dispatcher(behavioral)
+add wave -position insertpoint  \
+sim:/serialscorecontroller_tb/SDX_tb \
+sim:/serialscorecontroller_tb/SCLK_tb \
+sim:/serialscorecontroller_tb/SS_tb \
+sim:/serialscorecontroller_tb/Reset_tb \
+sim:/serialscorecontroller_tb/clk_tb \
+sim:/serialscorecontroller_tb/WrD_tb \
+sim:/serialscorecontroller_tb/Dout_tb
+add wave -position insertpoint  \
+sim:/serialscorecontroller_tb/UUT/SerialReceiver_U0/SerialControl_U0/CurrentState \
+sim:/serialscorecontroller_tb/UUT/SerialReceiver_U0/SerialControl_U0/NextState
+add wave -position insertpoint  \
+sim:/serialscorecontroller_tb/UUT/Score_Dispatcher_U0/CurrentState \
+sim:/serialscorecontroller_tb/UUT/Score_Dispatcher_U0/NextState
+run
+run
+run
+# End time: 19:25:03 on May 18,2024, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 0

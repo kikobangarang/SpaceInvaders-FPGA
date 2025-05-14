@@ -1,0 +1,81 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do Compare9_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Compare9/Compare9.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:13 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial LCD Controller/Serial Receiver/Compare9/Compare9.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Compare9
+# -- Compiling architecture behavioral of Compare9
+# End time: 16:20:13 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:37 on May 18,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Compare9_tb
+# -- Compiling architecture behavioral of Compare10_tb
+# ** Error: (vcom-11) Could not find work.compare10_tb.
+# ** Note: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd(7): VHDL Compiler exiting
+# End time: 16:20:37 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:51 on May 18,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Compare9_tb
+# -- Compiling architecture behavioral of Compare10_tb
+# ** Error: (vcom-11) Could not find work.compare10_tb.
+# ** Note: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd(7): VHDL Compiler exiting
+# End time: 16:20:51 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:21:28 on May 18,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial LCD Controller/Serial Receiver/Compare9/Compare9_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Compare9_tb
+# -- Compiling architecture behavioral of Compare9_tb
+# End time: 16:21:28 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.compare9_tb
+# vsim work.compare9_tb 
+# Start time: 16:21:31 on May 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.compare9_tb(behavioral)
+# Loading work.compare9(behavioral)
+add wave -position insertpoint  \
+sim:/compare9_tb/Data_tb \
+sim:/compare9_tb/R_tb \
+sim:/compare9_tb/MCLK_PERIOD \
+sim:/compare9_tb/MCLK_HALF_PERIOD
+run
+run
+run
+run
+# End time: 16:21:57 on May 18,2024, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 0

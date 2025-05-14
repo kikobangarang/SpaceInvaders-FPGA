@@ -1,0 +1,134 @@
+|KeyScan_Cont
+CE => KeyScan_Cont_Adder:Adder_U0.B[0]
+Reset => KeyScan_Cont_Reg:Reg_U0.Reset
+clk => KeyScan_Cont_Reg:Reg_U0.clk
+Q[0] << KeyScan_Cont_Reg:Reg_U0.Q[0]
+Q[1] << KeyScan_Cont_Reg:Reg_U0.Q[1]
+Q[2] << KeyScan_Cont_Reg:Reg_U0.Q[2]
+Q[3] << KeyScan_Cont_Reg:Reg_U0.Q[3]
+
+
+|KeyScan_Cont|KeyScan_Cont_Adder:Adder_U0
+A[0] => KeyScan_Cont_FullAdder:FullAdder_U0.A
+A[1] => KeyScan_Cont_FullAdder:FullAdder_U1.A
+A[2] => KeyScan_Cont_FullAdder:FullAdder_U2.A
+A[3] => KeyScan_Cont_FullAdder:FullAdder_U3.A
+B[0] => KeyScan_Cont_FullAdder:FullAdder_U0.B
+B[1] => KeyScan_Cont_FullAdder:FullAdder_U1.B
+B[2] => KeyScan_Cont_FullAdder:FullAdder_U2.B
+B[3] => KeyScan_Cont_FullAdder:FullAdder_U3.B
+CYi => KeyScan_Cont_FullAdder:FullAdder_U0.CYi
+S[0] <= KeyScan_Cont_FullAdder:FullAdder_U0.R
+S[1] <= KeyScan_Cont_FullAdder:FullAdder_U1.R
+S[2] <= KeyScan_Cont_FullAdder:FullAdder_U2.R
+S[3] <= KeyScan_Cont_FullAdder:FullAdder_U3.R
+C4 <= KeyScan_Cont_FullAdder:FullAdder_U3.CyOut
+
+
+|KeyScan_Cont|KeyScan_Cont_Adder:Adder_U0|KeyScan_Cont_FullAdder:FullAdder_U0
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyScan_Cont|KeyScan_Cont_Adder:Adder_U0|KeyScan_Cont_FullAdder:FullAdder_U1
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyScan_Cont|KeyScan_Cont_Adder:Adder_U0|KeyScan_Cont_FullAdder:FullAdder_U2
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyScan_Cont|KeyScan_Cont_Adder:Adder_U0|KeyScan_Cont_FullAdder:FullAdder_U3
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyScan_Cont|KeyScan_Cont_Reg:Reg_U0
+D[0] => KeyScan_Cont_FFD:FFD3.D
+D[1] => KeyScan_Cont_FFD:FFD2.D
+D[2] => KeyScan_Cont_FFD:FFD1.D
+D[3] => KeyScan_Cont_FFD:FFD0.D
+clk => KeyScan_Cont_FFD:FFD0.clk
+clk => KeyScan_Cont_FFD:FFD1.clk
+clk => KeyScan_Cont_FFD:FFD2.clk
+clk => KeyScan_Cont_FFD:FFD3.clk
+E => KeyScan_Cont_FFD:FFD0.EN
+E => KeyScan_Cont_FFD:FFD1.EN
+E => KeyScan_Cont_FFD:FFD2.EN
+E => KeyScan_Cont_FFD:FFD3.EN
+Reset => KeyScan_Cont_FFD:FFD0.Reset
+Reset => KeyScan_Cont_FFD:FFD1.Reset
+Reset => KeyScan_Cont_FFD:FFD2.Reset
+Reset => KeyScan_Cont_FFD:FFD3.Reset
+Q[0] <= KeyScan_Cont_FFD:FFD3.Q
+Q[1] <= KeyScan_Cont_FFD:FFD2.Q
+Q[2] <= KeyScan_Cont_FFD:FFD1.Q
+Q[3] <= KeyScan_Cont_FFD:FFD0.Q
+
+
+|KeyScan_Cont|KeyScan_Cont_Reg:Reg_U0|KeyScan_Cont_FFD:FFD0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyScan_Cont|KeyScan_Cont_Reg:Reg_U0|KeyScan_Cont_FFD:FFD1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyScan_Cont|KeyScan_Cont_Reg:Reg_U0|KeyScan_Cont_FFD:FFD2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|KeyScan_Cont|KeyScan_Cont_Reg:Reg_U0|KeyScan_Cont_FFD:FFD3
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

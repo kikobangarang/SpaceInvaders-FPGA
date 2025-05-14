@@ -1,0 +1,68 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do RingBufferControl_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Ring Buffer Control/RingBufferControl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:17:53 on May 18,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Ring Buffer/Ring Buffer Control/RingBufferControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBufferControl
+# -- Compiling architecture behavioral of RingBufferControl
+# End time: 23:17:53 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Ring Buffer Control/RingBufferControl_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:18:19 on May 18,2024
+# vcom -reportprogress 300 -work work C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Ring Buffer Control/RingBufferControl_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBufferControl_tb
+# -- Compiling architecture behavioral of RingBufferControl_tb
+# ** Warning: C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Ring Buffer/Ring Buffer Control/RingBufferControl_tb.vhd(16): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 23:18:19 on May 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.ringbuffercontrol_tb
+# vsim work.ringbuffercontrol_tb 
+# Start time: 23:18:22 on May 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ringbuffercontrol_tb(behavioral)
+# Loading work.ringbuffercontrol(behavioral)
+add wave -position insertpoint  \
+sim:/ringbuffercontrol_tb/Reset_tb \
+sim:/ringbuffercontrol_tb/clk_tb \
+sim:/ringbuffercontrol_tb/DAV_tb \
+sim:/ringbuffercontrol_tb/CTS_tb \
+sim:/ringbuffercontrol_tb/full_tb \
+sim:/ringbuffercontrol_tb/empty_tb \
+sim:/ringbuffercontrol_tb/Wr_tb \
+sim:/ringbuffercontrol_tb/selPG_tb \
+sim:/ringbuffercontrol_tb/Wreg_tb \
+sim:/ringbuffercontrol_tb/DAC_tb \
+sim:/ringbuffercontrol_tb/incPut_tb \
+sim:/ringbuffercontrol_tb/incGet_tb
+add wave -position insertpoint  \
+sim:/ringbuffercontrol_tb/UUT/CurrentState \
+sim:/ringbuffercontrol_tb/UUT/NextState
+run
+run
+run
+run
+run
+# End time: 23:21:31 on May 18,2024, Elapsed time: 0:03:09
+# Errors: 0, Warnings: 0

@@ -1,0 +1,11 @@
+|BufferControl
+Reset => CurrentState.ACLR
+clk => CurrentState.CLK
+Load => NextState.DATAB
+Load => GenerateNextState.IN0
+ACK => GenerateNextState.IN1
+OBfree << CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+Wreg << CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+Dval << CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+
+

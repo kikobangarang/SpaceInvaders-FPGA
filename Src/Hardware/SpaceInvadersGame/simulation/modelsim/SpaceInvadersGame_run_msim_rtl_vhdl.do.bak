@@ -1,0 +1,68 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/SpaceInvadersGame.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/UsbPort.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/RingBufferControl.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/RingBuffer.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/RAM.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/OutputRegister_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/OutputRegister.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/OutputBuffer.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MemoryAddressControl.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Mux.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Cont_Reg.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Cont_FullAdder.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Cont_Adder.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Cont.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Compare.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Mux.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Decoder.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont_Reg.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont_FullAdder.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont_Adder.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyDecode.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyControl.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyboardReader.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/BufferControl.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ShiftRegister_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/SerialScoreController.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Score_Dispatcher.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter_Reg_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter_Reg.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter_Adder_FullAdder.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter_Adder.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck_Counter.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/ParityCheck.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter_Reg_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter_Reg.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter_Adder_FullAdder.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter_Adder.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Counter.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Compare8.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Compare7.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/SerialLCDController.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/SerialControl.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/LCD_Dispatcher.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/Compare10.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/Compare9.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/LCD_SerialReceiver_ShiftRegister.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial LCD Controller/LCD_SerialReceiver.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Score_SerialReceiver_ShiftRegister.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/Score_SerialReceiver.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/CoinAccept.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/scoredisplay.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/dec_3_8.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/reg_4bit.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/ffd.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/dec2hex.vhd}
+vcom -93 -work work {C:/Users/35196/Downloads/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Serial Score Controller/SerialControl.vhd}
+

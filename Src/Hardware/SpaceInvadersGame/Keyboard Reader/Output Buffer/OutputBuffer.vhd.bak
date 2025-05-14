@@ -1,0 +1,54 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity OutputBuffer is
+port(	
+	D : in std_logic_vector(3 downto 0);
+	Load, Reset, ACK, CLK: in std_logic;
+	Q : out std_logic_vector(3 downto 0);
+	OBfree, Dval : out std_logic
+);
+end OutputBuffer;
+
+architecture behavioral of OutputBuffer is
+
+component Reg4Bits is
+port(	
+	D : in std_logic_vector(3 downto 0);
+	CLK : in std_logic;
+	E : in std_logic;
+	Reset : in std_logic;
+	Q : out std_logic_vector(3 downto 0)
+);
+end component;
+
+component BufferControl is
+port(
+	Reset, CLK, Load, ACK: in std_logic;
+	OBfree, Wreg, Dval: out std_logic
+);
+end component;
+
+signal term0: std_logic;
+
+begin 
+
+BufferControl_U0: BufferControl port map(
+	Reset => Reset, 
+	CLK => CLK, 
+	Load => Load, 
+	ACK => ACK,
+	OBfree => OBfree, 
+	Wreg => term0, 
+	Dval => Dval
+);
+
+Reg4Bits_U0: Reg4Bits port map(
+	D => D,
+	CLK => term0,
+	E => '1',
+	Reset => Reset,
+	Q => Q
+);
+
+end behavioral;

@@ -1,0 +1,8 @@
+|Compare8
+Data[0] => R.IN1
+Data[1] => R.IN1
+Data[2] => R.IN0
+Data[3] => R.IN1
+R << R.DB_MAX_OUTPUT_PORT_TYPE
+
+

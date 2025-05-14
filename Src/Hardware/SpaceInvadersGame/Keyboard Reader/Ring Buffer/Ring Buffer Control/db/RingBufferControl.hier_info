@@ -1,0 +1,20 @@
+|RingBufferControl
+Reset => CurrentState~3.DATAIN
+clk => CurrentState~1.DATAIN
+DAV => GenerateNextState.IN0
+DAV => Selector1.IN3
+DAV => GenerateNextState.IN0
+DAV => Selector0.IN1
+CTS => GenerateNextState.IN1
+CTS => Selector2.IN3
+CTS => Selector0.IN3
+full => GenerateNextState.IN1
+empty => GenerateNextState.IN1
+Wr << Wr.DB_MAX_OUTPUT_PORT_TYPE
+selPG << selPG.DB_MAX_OUTPUT_PORT_TYPE
+Wreg << Wreg.DB_MAX_OUTPUT_PORT_TYPE
+DAC << DAC.DB_MAX_OUTPUT_PORT_TYPE
+incPut << incPut.DB_MAX_OUTPUT_PORT_TYPE
+incGet << incGet.DB_MAX_OUTPUT_PORT_TYPE
+
+

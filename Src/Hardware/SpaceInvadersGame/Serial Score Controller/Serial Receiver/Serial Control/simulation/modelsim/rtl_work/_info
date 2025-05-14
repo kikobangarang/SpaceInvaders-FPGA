@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Serial Control/simulation/modelsim
+Eserialcontrol
+Z1 w1715888838
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Serial Control/SerialControl.vhd
+Z5 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Serial Control/SerialControl.vhd
+l0
+L4 1
+VR;<S1?cC:HfIR@aVjBg>c3
+!s100 [ebZze255ENZf_l]>mi2V1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1716053887
+!i10b 1
+Z8 !s108 1716053887.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Serial Control/SerialControl.vhd|
+Z10 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Serial Control/SerialControl.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 13 serialcontrol 0 22 R;<S1?cC:HfIR@aVjBg>c3
+!i122 0
+l17
+L11 49
+V6WC=hO=?4`7h3;ZYlmR<L0
+!s100 gLk6D2aJ?Xb76:f=a7^K_3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eserialcontrol_tb
+Z13 w1716036223
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Serial Control/SerialControl_tb.vhd
+Z15 FC:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Serial Control/SerialControl_tb.vhd
+l0
+L4 1
+VHE1jM;cG:;o8O2LJUF6>E3
+!s100 =dO2Ae_mR:VB5^J1GOoo20
+R6
+32
+Z16 !s110 1716053905
+!i10b 1
+Z17 !s108 1716053905.000000
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Serial Control/SerialControl_tb.vhd|
+!s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Serial Control/SerialControl_tb.vhd|
+!i113 1
+Z19 o-work work
+R12
+Abehavioral
+R2
+R3
+DEx4 work 16 serialcontrol_tb 0 22 HE1jM;cG:;o8O2LJUF6>E3
+!i122 1
+l22
+L7 77
+V7QkJkj5_KR]CThOioBOP_2
+!s100 fK<KD2XM=aTXfBM1OQef`1
+R6
+32
+R16
+!i10b 1
+R17
+R18
+Z20 !s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Serial Control/SerialControl_tb.vhd|
+!i113 1
+R19
+R12

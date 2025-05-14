@@ -1,0 +1,316 @@
+|RingBuffer
+DAV => RingBufferControl:RingBufferControl_U0.DAV
+CTS => RingBufferControl:RingBufferControl_U0.CTS
+clk => RingBufferControl:RingBufferControl_U0.clk
+clk => MemoryAddressControl:MemoryAddressControl_U0.clk
+Reset => RingBufferControl:RingBufferControl_U0.Reset
+Reset => MemoryAddressControl:MemoryAddressControl_U0.Reset
+D[0] => RAM:RAM_U0.din[0]
+D[1] => RAM:RAM_U0.din[1]
+D[2] => RAM:RAM_U0.din[2]
+D[3] => RAM:RAM_U0.din[3]
+Q[0] << RAM:RAM_U0.dout[0]
+Q[1] << RAM:RAM_U0.dout[1]
+Q[2] << RAM:RAM_U0.dout[2]
+Q[3] << RAM:RAM_U0.dout[3]
+Wreg << RingBufferControl:RingBufferControl_U0.Wreg
+DAC << RingBufferControl:RingBufferControl_U0.DAC
+
+
+|RingBuffer|RingBufferControl:RingBufferControl_U0
+Reset => CurrentState~3.DATAIN
+clk => CurrentState~1.DATAIN
+DAV => GenerateNextState.IN0
+DAV => Selector1.IN3
+DAV => GenerateNextState.IN0
+DAV => Selector0.IN1
+CTS => GenerateNextState.IN1
+CTS => Selector2.IN3
+CTS => Selector0.IN3
+full => GenerateNextState.IN1
+empty => GenerateNextState.IN1
+Wr <= Wr.DB_MAX_OUTPUT_PORT_TYPE
+selPG <= selPG.DB_MAX_OUTPUT_PORT_TYPE
+Wreg <= Wreg.DB_MAX_OUTPUT_PORT_TYPE
+DAC <= DAC.DB_MAX_OUTPUT_PORT_TYPE
+incPut <= incPut.DB_MAX_OUTPUT_PORT_TYPE
+incGet <= incGet.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0
+putget => MAC_Mux:MAC_Mux_U0.putGet
+putget => MAC_FFD:MAC_FFD_U0.D
+incPut => MAC_Cont:MAC_Cont_U0.CE
+incGet => MAC_Cont:MAC_Cont_U1.CE
+Reset => MAC_Cont:MAC_Cont_U0.Reset
+Reset => MAC_Cont:MAC_Cont_U1.Reset
+Reset => MAC_FFD:MAC_FFD_U0.Reset
+clk => MAC_Cont:MAC_Cont_U0.clk
+clk => MAC_Cont:MAC_Cont_U1.clk
+clk => MAC_FFD:MAC_FFD_U0.clk
+full <= full.DB_MAX_OUTPUT_PORT_TYPE
+empty <= empty.DB_MAX_OUTPUT_PORT_TYPE
+Address[0] <= MAC_Mux:MAC_Mux_U0.Address[0]
+Address[1] <= MAC_Mux:MAC_Mux_U0.Address[1]
+Address[2] <= MAC_Mux:MAC_Mux_U0.Address[2]
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0
+CE => MAC_Cont_Adder:Adder_0.B[0]
+Reset => MAC_Cont_Reg:MAC_Cont_Reg_U0.Reset
+clk => MAC_Cont_Reg:MAC_Cont_Reg_U0.clk
+Q[0] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[0]
+Q[1] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[1]
+Q[2] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[2]
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Adder:Adder_0
+A[0] => MAC_Cont_FullAdder:FullAdder_U0.A
+A[1] => MAC_Cont_FullAdder:FullAdder_U1.A
+A[2] => MAC_Cont_FullAdder:FullAdder_U2.A
+B[0] => MAC_Cont_FullAdder:FullAdder_U0.B
+B[1] => MAC_Cont_FullAdder:FullAdder_U1.B
+B[2] => MAC_Cont_FullAdder:FullAdder_U2.B
+CYi => MAC_Cont_FullAdder:FullAdder_U0.CYi
+S[0] <= MAC_Cont_FullAdder:FullAdder_U0.R
+S[1] <= MAC_Cont_FullAdder:FullAdder_U1.R
+S[2] <= MAC_Cont_FullAdder:FullAdder_U2.R
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U0
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U1
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U2
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0
+D[0] => MAC_FFD:FFD_U2.D
+D[1] => MAC_FFD:FFD_U1.D
+D[2] => MAC_FFD:FFD_U0.D
+clk => MAC_FFD:FFD_U0.clk
+clk => MAC_FFD:FFD_U1.clk
+clk => MAC_FFD:FFD_U2.clk
+E => MAC_FFD:FFD_U0.EN
+E => MAC_FFD:FFD_U1.EN
+E => MAC_FFD:FFD_U2.EN
+Reset => MAC_FFD:FFD_U0.Reset
+Reset => MAC_FFD:FFD_U1.Reset
+Reset => MAC_FFD:FFD_U2.Reset
+Q[0] <= MAC_FFD:FFD_U2.Q
+Q[1] <= MAC_FFD:FFD_U1.Q
+Q[2] <= MAC_FFD:FFD_U0.Q
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U0|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1
+CE => MAC_Cont_Adder:Adder_0.B[0]
+Reset => MAC_Cont_Reg:MAC_Cont_Reg_U0.Reset
+clk => MAC_Cont_Reg:MAC_Cont_Reg_U0.clk
+Q[0] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[0]
+Q[1] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[1]
+Q[2] <= MAC_Cont_Reg:MAC_Cont_Reg_U0.Q[2]
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Adder:Adder_0
+A[0] => MAC_Cont_FullAdder:FullAdder_U0.A
+A[1] => MAC_Cont_FullAdder:FullAdder_U1.A
+A[2] => MAC_Cont_FullAdder:FullAdder_U2.A
+B[0] => MAC_Cont_FullAdder:FullAdder_U0.B
+B[1] => MAC_Cont_FullAdder:FullAdder_U1.B
+B[2] => MAC_Cont_FullAdder:FullAdder_U2.B
+CYi => MAC_Cont_FullAdder:FullAdder_U0.CYi
+S[0] <= MAC_Cont_FullAdder:FullAdder_U0.R
+S[1] <= MAC_Cont_FullAdder:FullAdder_U1.R
+S[2] <= MAC_Cont_FullAdder:FullAdder_U2.R
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U0
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U1
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Adder:Adder_0|MAC_Cont_FullAdder:FullAdder_U2
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Reg:MAC_Cont_Reg_U0
+D[0] => MAC_FFD:FFD_U2.D
+D[1] => MAC_FFD:FFD_U1.D
+D[2] => MAC_FFD:FFD_U0.D
+clk => MAC_FFD:FFD_U0.clk
+clk => MAC_FFD:FFD_U1.clk
+clk => MAC_FFD:FFD_U2.clk
+E => MAC_FFD:FFD_U0.EN
+E => MAC_FFD:FFD_U1.EN
+E => MAC_FFD:FFD_U2.EN
+Reset => MAC_FFD:FFD_U0.Reset
+Reset => MAC_FFD:FFD_U1.Reset
+Reset => MAC_FFD:FFD_U2.Reset
+Q[0] <= MAC_FFD:FFD_U2.Q
+Q[1] <= MAC_FFD:FFD_U1.Q
+Q[2] <= MAC_FFD:FFD_U0.Q
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Cont:MAC_Cont_U1|MAC_Cont_Reg:MAC_Cont_Reg_U0|MAC_FFD:FFD_U2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Mux:MAC_Mux_U0
+incPutOut[0] => Address.DATAB
+incPutOut[1] => Address.DATAB
+incPutOut[2] => Address.DATAB
+incGetOut[0] => Address.DATAA
+incGetOut[1] => Address.DATAA
+incGetOut[2] => Address.DATAA
+putGet => Address.OUTPUTSELECT
+putGet => Address.OUTPUTSELECT
+putGet => Address.OUTPUTSELECT
+Address[0] <= Address.DB_MAX_OUTPUT_PORT_TYPE
+Address[1] <= Address.DB_MAX_OUTPUT_PORT_TYPE
+Address[2] <= Address.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_Compare:MAC_Compare_U0
+incPutOut[0] => Q.IN0
+incPutOut[1] => Q.IN0
+incPutOut[2] => Q.IN0
+incGetOut[0] => Q.IN1
+incGetOut[1] => Q.IN1
+incGetOut[2] => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|MemoryAddressControl:MemoryAddressControl_U0|MAC_FFD:MAC_FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RingBuffer|RAM:RAM_U0
+address[0] => ram.RADDR
+address[0] => ram.WADDR
+address[1] => ram.RADDR1
+address[1] => ram.WADDR1
+address[2] => ram.RADDR2
+address[2] => ram.WADDR2
+wr => ram.WE
+din[0] => ram.DATAIN
+din[1] => ram.DATAIN1
+din[2] => ram.DATAIN2
+din[3] => ram.DATAIN3
+dout[0] <= ram.DATAOUT
+dout[1] <= ram.DATAOUT1
+dout[2] <= ram.DATAOUT2
+dout[3] <= ram.DATAOUT3
+
+

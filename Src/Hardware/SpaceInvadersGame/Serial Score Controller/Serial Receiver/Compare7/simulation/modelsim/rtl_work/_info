@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Compare7/simulation/modelsim
+Ecompare7
+Z1 w1715941883
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Compare7/Compare7.vhd
+Z5 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Compare7/Compare7.vhd
+l0
+L4 1
+Vz@;U:hhYZC]0V3DN76L273
+!s100 7>_:[21:WDZ=ncPB;43oi2
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1716055231
+!i10b 1
+Z8 !s108 1716055231.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Compare7/Compare7.vhd|
+Z10 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Serial Receiver/Compare7/Compare7.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 8 compare7 0 22 z@;U:hhYZC]0V3DN76L273
+!i122 0
+l13
+L11 7
+V`3F^e8UQBC`8=Il;5SX^L2
+!s100 1:L_LZ0R6N;HdGY=VQQ[h1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecompare7_tb
+Z13 w1716054866
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Compare7/Compare7_tb.vhd
+Z15 FC:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Compare7/Compare7_tb.vhd
+l0
+L4 1
+VQ3^kYVMYQZ`IB>MkC]7B?0
+!s100 Xboag;n@0:?Ra`igcBj<_0
+R6
+32
+Z16 !s110 1716055280
+!i10b 1
+Z17 !s108 1716055280.000000
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Compare7/Compare7_tb.vhd|
+!s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Compare7/Compare7_tb.vhd|
+!i113 1
+Z19 o-work work
+R12
+Abehavioral
+R2
+R3
+DEx4 work 11 compare7_tb 0 22 Q3^kYVMYQZ`IB>MkC]7B?0
+!i122 1
+l22
+L7 94
+VWofa6ImghNbbdgMGLQBiP0
+!s100 lkiKTkWlhBO:B7fY;eSUL0
+R6
+32
+R16
+!i10b 1
+R17
+R18
+Z20 !s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Serial Receiver/Compare7/Compare7_tb.vhd|
+!i113 1
+R19
+R12

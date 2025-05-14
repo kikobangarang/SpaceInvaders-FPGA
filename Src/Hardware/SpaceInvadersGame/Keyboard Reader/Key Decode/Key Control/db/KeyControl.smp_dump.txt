@@ -1,0 +1,6 @@
+
+State Machine - |KeyControl|CurrentState
+Name CurrentState.STATE_WAITING CurrentState.STATE_SEARCHING CurrentState.STATE_SCANNING 
+CurrentState.STATE_SCANNING 0 0 0 
+CurrentState.STATE_SEARCHING 0 1 1 
+CurrentState.STATE_WAITING 1 0 1 

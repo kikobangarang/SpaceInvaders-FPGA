@@ -1,0 +1,35 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/RingBufferControl.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/RingBuffer.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/RAM.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/OutputRegister_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/OutputRegister.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/OutputBuffer.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MemoryAddressControl.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Mux.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Cont_Reg.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Cont_FullAdder.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Cont_Adder.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Cont.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/MAC_Compare.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Mux.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Decoder.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont_Reg.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont_FullAdder.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont_FFD.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont_Adder.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan_Cont.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyScan.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyDecode.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyControl.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/KeyboardReader.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/BufferControl.vhd}
+vcom -93 -work work {C:/Users/35196/Desktop/LEIC24D_G6/LEIC24D_G6/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/clkDIV.vhd}
+

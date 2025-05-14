@@ -1,0 +1,73 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity LCD_Dispatcher_tb is 
+end LCD_Dispatcher_tb;
+
+architecture behavioral of LCD_Dispatcher_tb is
+    
+	component LCD_Dispatcher is port(
+    	Din: in std_logic_vector(8 downto 0);
+		Dval, clk, Reset: in std_logic;
+		WrL, done: out std_logic;
+		Dout: out std_logic_vector(8 downto 0)
+	);
+	end component;
+   
+    -- UUT Signals
+    constant MCLK_PERIOD : time := 20ns;
+    constant MCLK_HALF_PERIOD : time := MCLK_PERIOD / 2;
+
+	signal Dval_tb, clk_tb, Reset_tb, WrL_tb, done_tb: std_logic;
+	signal Din_tb, Dout_tb: std_logic_vector(8 downto 0);
+
+
+    begin
+
+        --Unit Under Test
+
+        UUT:LCD_Dispatcher port map(
+			    Din => Din_tb,
+				Dval => Dval_tb, 
+				clk => clk_tb, 
+				Reset => Reset_tb,
+				WrL => WrL_tb, 
+				done => done_tb,
+				Dout => Dout_tb
+        );
+
+        clk_gen : process
+        begin
+	        clk_tb <= '0';
+	        wait for MCLK_HALF_PERIOD;
+
+	        clk_tb <= '1';
+	        wait for MCLK_HALF_PERIOD;
+
+        end process;
+
+		
+        stimulus: process
+        begin
+
+					Din_tb <= "000000000";
+					Dval_tb <= '0';
+					Reset_tb <= '1';
+					wait for MCLK_PERIOD*2;
+
+					Reset_tb <= '0';
+					wait for MCLK_PERIOD*2;
+
+					Din_tb <= "010101010";
+					wait for MCLK_PERIOD*2;
+
+					Dval_tb <= '1';
+					wait for MCLK_PERIOD*6;
+
+					Dval_tb <= '0';
+					wait for MCLK_PERIOD*2;
+
+          wait;
+          end process;
+			 
+end behavioral;

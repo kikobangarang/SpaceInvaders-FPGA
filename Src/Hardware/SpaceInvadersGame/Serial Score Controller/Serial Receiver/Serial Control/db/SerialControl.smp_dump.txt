@@ -1,0 +1,7 @@
+
+State Machine - |SerialControl|CurrentState
+Name CurrentState.STATE_WAITINGACCEPT CurrentState.STATE_ERRORCHECK CurrentState.STATE_WRITING CurrentState.STATE_INIT 
+CurrentState.STATE_INIT 0 0 0 0 
+CurrentState.STATE_WRITING 0 0 1 1 
+CurrentState.STATE_ERRORCHECK 0 1 0 1 
+CurrentState.STATE_WAITINGACCEPT 1 0 0 1 

@@ -1,0 +1,7 @@
+
+State Machine - |LCD_Dispatcher|CurrentState
+Name CurrentState.STATE_DONE CurrentState.STATE_ENABLE CurrentState.STATE_DATA CurrentState.STATE_WAITING 
+CurrentState.STATE_WAITING 0 0 0 0 
+CurrentState.STATE_DATA 0 0 1 1 
+CurrentState.STATE_ENABLE 0 1 0 1 
+CurrentState.STATE_DONE 1 0 0 1 

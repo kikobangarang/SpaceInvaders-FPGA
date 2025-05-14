@@ -1,0 +1,62 @@
+
+State Machine - |SpaceInvadersGame|SerialScoreController:U2|Score_Dispatcher:Score_Dispatcher_U0|CurrentState
+Name CurrentState.state_bit_1 CurrentState.state_bit_0 
+CurrentState.STATE_WAITING 0 0 
+CurrentState.STATE_DATA 0 1 
+CurrentState.STATE_ENABLE 1 1 
+CurrentState.STATE_DONE 1 0 
+
+State Machine - |SpaceInvadersGame|SerialScoreController:U2|Score_SerialReceiver:Score_SerialReceiver_U0|SerialControl:SerialControl_U0|CurrentState
+Name CurrentState.state_bit_1 CurrentState.state_bit_0 
+CurrentState.STATE_INIT 0 0 
+CurrentState.STATE_WRITING 0 1 
+CurrentState.STATE_ERRORCHECK 1 1 
+CurrentState.STATE_WAITINGACCEPT 1 0 
+
+State Machine - |SpaceInvadersGame|SerialLCDController:U1|LCD_Dispatcher:LCDDispatcher_U0|CurrentState
+Name CurrentState.state_bit_3 CurrentState.state_bit_2 CurrentState.state_bit_1 CurrentState.state_bit_0 
+CurrentState.STATE_WAITING 0 0 0 0 
+CurrentState.STATE_DATA 0 0 0 1 
+CurrentState.STATE_ENABLE 0 0 1 1 
+CurrentState.STATE_DONE 0 0 1 0 
+CurrentState.STATE_WAIT1 0 1 1 0 
+CurrentState.STATE_WAIT2 0 1 1 1 
+CurrentState.STATE_WAIT3 0 1 0 1 
+CurrentState.STATE_WAIT4 0 1 0 0 
+CurrentState.STATE_WAIT5 1 1 0 0 
+CurrentState.STATE_WAIT6 1 1 0 1 
+CurrentState.STATE_WAIT7 1 1 1 1 
+CurrentState.STATE_WAIT8 1 1 1 0 
+CurrentState.STATE_WAIT9 1 0 1 0 
+CurrentState.STATE_WAIT10 1 0 1 1 
+CurrentState.STATE_WAIT11 1 0 0 1 
+
+State Machine - |SpaceInvadersGame|SerialLCDController:U1|LCD_SerialReceiver:LCD_SerialReceiver_U0|SerialControl:SerialControl_U0|CurrentState
+Name CurrentState.state_bit_1 CurrentState.state_bit_0 
+CurrentState.STATE_INIT 0 0 
+CurrentState.STATE_WRITING 0 1 
+CurrentState.STATE_ERRORCHECK 1 1 
+CurrentState.STATE_WAITINGACCEPT 1 0 
+
+State Machine - |SpaceInvadersGame|KeyboardReader:U0|OutputBuffer:OutputBuffer_U0|BufferControl:BufferControl_U0|CurrentState
+Name CurrentState.state_bit_1 CurrentState.state_bit_0 
+CurrentState.STATE_WAIT_LOAD 0 0 
+CurrentState.STATE_REGISTER 0 1 
+CurrentState.STATE_WAIT_ACK 1 1 
+CurrentState.STATE_WAIT_NOT_LOAD 1 0 
+
+State Machine - |SpaceInvadersGame|KeyboardReader:U0|RingBuffer:RingBuffer_U0|RingBufferControl:RingBufferControl_U0|CurrentState
+Name CurrentState.state_bit_2 CurrentState.state_bit_1 CurrentState.state_bit_0 
+CurrentState.STATE_000 0 0 0 
+CurrentState.STATE_001 0 0 1 
+CurrentState.STATE_010 0 1 1 
+CurrentState.STATE_011 0 1 0 
+CurrentState.STATE_100 1 1 0 
+CurrentState.STATE_101 1 1 1 
+CurrentState.STATE_INCGET 1 0 1 
+
+State Machine - |SpaceInvadersGame|KeyboardReader:U0|KeyDecode:KeyDecode_U0|KeyControl:KeyControl_Unit0|CurrentState
+Name CurrentState.state_bit_1 CurrentState.state_bit_0 
+CurrentState.STATE_SCANNING 0 0 
+CurrentState.STATE_SEARCHING 0 1 
+CurrentState.STATE_WAITING 1 1 

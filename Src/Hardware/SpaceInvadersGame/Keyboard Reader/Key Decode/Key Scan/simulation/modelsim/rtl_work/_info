@@ -1,0 +1,257 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/simulation/modelsim
+Ekeyscan_cont
+Z1 w1715851648
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont.vhd
+Z5 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont.vhd
+l0
+L4 1
+VlBeH0kK:>n6h<]e=D6bD72
+!s100 `?6UO9jgYYP>f;Nd`gk5<1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1716067549
+!i10b 1
+Z8 !s108 1716067549.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont.vhd|
+Z10 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 12 keyscan_cont 0 22 lBeH0kK:>n6h<]e=D6bD72
+!i122 0
+l34
+L11 47
+VA>[4NGPbnLjJ_PA::lQMg0
+!s100 @l53RDmZF<YcbQaN>6WK:1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ekeyscan_cont_adder
+Z13 w1715851718
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_adder.vhd
+Z15 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_adder.vhd
+l0
+L4 1
+VdCFZDcW`h8f@3dDN5mRHC0
+!s100 fnQJ[^5Bz;9_d@nZg48[12
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_adder.vhd|
+Z17 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_adder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 18 keyscan_cont_adder 0 22 dCFZDcW`h8f@3dDN5mRHC0
+!i122 1
+l27
+L14 47
+Vf1;DD?_3YEn<PJKLGMIf93
+!s100 ESV>P<GWn1UhYoQ7@Po8I0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ekeyscan_cont_ffd
+Z18 w1715851373
+R2
+R3
+!i122 4
+R0
+Z19 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_ffd.vhd
+Z20 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_ffd.vhd
+l0
+L4 1
+Vc?3D2Rf@A`[UzBb[]`e240
+!s100 0fC@aK2of7SCGGR2jRl[z2
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_ffd.vhd|
+Z22 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_ffd.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 16 keyscan_cont_ffd 0 22 c?3D2Rf@A`[UzBb[]`e240
+!i122 4
+l17
+L15 7
+VSJ=<FeN^J@JbeaHd?Y<>h1
+!s100 DCzAmJXeogJWYjaNg1?7E0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Ekeyscan_cont_fulladder
+Z23 w1715851563
+R2
+R3
+!i122 2
+R0
+Z24 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_fulladder.vhd
+Z25 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_fulladder.vhd
+l0
+L4 1
+Vnb6<WX19AHW]RSVkoCMGa1
+!s100 N6Bn9e8kAiCz1Nd462io;2
+R6
+31
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_fulladder.vhd|
+Z27 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_fulladder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 22 keyscan_cont_fulladder 0 22 nb6<WX19AHW]RSVkoCMGa1
+!i122 2
+l16
+L14 8
+VhI9]lHE_?0mn8NJVMTDZG1
+!s100 Cd=W0Llbobm`UjV2K<BXI2
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Ekeyscan_cont_reg
+Z28 w1715851663
+R2
+R3
+!i122 3
+R0
+Z29 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_reg.vhd
+Z30 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_reg.vhd
+l0
+L4 1
+VQP]A@H9`5Jg[Nm=g<Y4OF2
+!s100 g7fB27ah?1E=N=<2;;EM`0
+R6
+31
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_reg.vhd|
+Z32 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/SpaceInvadersGame/Keyboard Reader/Key Decode/Key Scan/keyscan_cont_reg.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 16 keyscan_cont_reg 0 22 QP]A@H9`5Jg[Nm=g<Y4OF2
+!i122 3
+l26
+L14 51
+Vz]_Ujoi4d^MGVcBIUm?D13
+!s100 2e6Y=ifFIVoMKM[YIPEHQ0
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Ekeyscan_cont_tb
+Z33 w1716067512
+R2
+R3
+!i122 5
+R0
+Z34 8C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Key Decode/Key Scan/KeyScan_Cont/KeyScan_Cont_tb.vhd
+Z35 FC:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Key Decode/Key Scan/KeyScan_Cont/KeyScan_Cont_tb.vhd
+l0
+L4 1
+VO6Ic5]KzRNYYH7i@dnjW52
+!s100 jLmb=GlED3LThazTIETE<0
+R6
+32
+Z36 !s110 1716067566
+!i10b 1
+Z37 !s108 1716067566.000000
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Key Decode/Key Scan/KeyScan_Cont/KeyScan_Cont_tb.vhd|
+!s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Key Decode/Key Scan/KeyScan_Cont/KeyScan_Cont_tb.vhd|
+!i113 1
+Z39 o-work work
+R12
+Abehavioral
+R2
+R3
+DEx4 work 15 keyscan_cont_tb 0 22 O6Ic5]KzRNYYH7i@dnjW52
+!i122 5
+l26
+L7 56
+V;g>VXTkOo?7a`YRdS:0Jm2
+!s100 HD?EVESWoO[2d;QmJ47CB1
+R6
+32
+R36
+!i10b 1
+R37
+R38
+Z40 !s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Keyboard Reader/Key Decode/Key Scan/KeyScan_Cont/KeyScan_Cont_tb.vhd|
+!i113 1
+R39
+R12

@@ -1,0 +1,55 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity KeyControl is
+port(
+	Reset: in std_logic;
+	CLK: in std_logic;
+	Kack: in std_logic;
+	Kpress: in std_logic;
+	Kval: out std_logic;
+	Kscan: out std_logic
+);
+end KeyControl;
+
+architecture behavioral of KeyControl is
+
+type STATE_TYPE is (STATE_SCANNING, STATE_SEARCHING, STATE_WAITING);
+
+signal CurrentState, NextState : STATE_TYPE;
+
+begin
+
+-- Flip-Flop's
+CurrentState <= STATE_SCANNING when Reset = '1' else NextState when rising_edge(clk);
+
+-- Generate Next State
+GenerateNextState:
+process (CurrentState, Kack, Kpress)
+	begin
+		case CurrentState is
+			when STATE_SCANNING   => if (Kpress = '1') then 
+													NextState <= STATE_SEARCHING;
+											else NextState <= STATE_SCANNING;
+											end if;
+											
+			when STATE_SEARCHING     => if (Kack = '1') then
+													NextState <= STATE_WAITING;
+											else NextState <= STATE_SEARCHING;
+											end if;
+											
+			when STATE_WAITING    => if(Kack = '0' and Kpress = '0') then
+													NextState <= STATE_SCANNING;
+											else NextState <= STATE_WAITING;
+											end if;
+											
+	end case;
+end process;
+
+-- Generate Outputs
+Kscan <= '1' when (CurrentState = STATE_SCANNING) else '0';
+
+Kval <= '1' when (CurrentState = STATE_SEARCHING) else '0';
+
+
+end behavioral;

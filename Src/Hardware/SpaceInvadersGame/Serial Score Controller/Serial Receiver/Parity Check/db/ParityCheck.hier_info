@@ -1,0 +1,138 @@
+|ParityCheck
+data => ParityCheck_Counter:ParityCheckCounter_U0.data
+init => ParityCheck_Counter:ParityCheckCounter_U0.init
+clk => ParityCheck_Counter:ParityCheckCounter_U0.clk
+err << ParityCheck_Counter:ParityCheckCounter_U0.err
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0
+init => ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0.Reset
+data => ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0.B[0]
+clk => ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0.clk
+err <= ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0.Q[0]
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0
+A[0] => ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U0.A
+A[1] => ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U1.A
+A[2] => ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U2.A
+A[3] => ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U3.A
+B[0] => ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U0.B
+B[1] => ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U1.B
+B[2] => ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U2.B
+B[3] => ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U3.B
+CYi => ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U0.CYi
+S[0] <= ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U0.R
+S[1] <= ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U1.R
+S[2] <= ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U2.R
+S[3] <= ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U3.R
+C4 <= ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U3.CyOut
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0|ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U0
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0|ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U1
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0|ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U2
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Adder:ParityCheck_Counter_Adder_U0|ParityCheck_Counter_Adder_FullAdder:ParityCheck_Counter_Adder_FullAdder_U3
+A => R.IN0
+A => CyOut.IN0
+B => R.IN1
+B => CyOut.IN1
+CYi => R.IN1
+CYi => CyOut.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+CyOut <= CyOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0
+D[0] => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3.D
+D[1] => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U2.D
+D[2] => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U1.D
+D[3] => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U0.D
+clk => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U0.clk
+clk => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U1.clk
+clk => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U2.clk
+clk => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3.clk
+E => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U0.EN
+E => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U1.EN
+E => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U2.EN
+E => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3.EN
+Reset => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U0.Reset
+Reset => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U1.Reset
+Reset => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U2.Reset
+Reset => ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3.Reset
+Q[0] <= ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3.Q
+Q[1] <= ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U2.Q
+Q[2] <= ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U1.Q
+Q[3] <= ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U0.Q
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParityCheck|ParityCheck_Counter:ParityCheckCounter_U0|ParityCheck_Counter_Reg:ParityCheck_Counter_Reg_U0|ParityCheck_Counter_Reg_FFD:ParityCheck_Counter_Reg_FFD_U3
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

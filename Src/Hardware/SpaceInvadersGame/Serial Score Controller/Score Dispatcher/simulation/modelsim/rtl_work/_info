@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Score Dispatcher/simulation/modelsim
+Escore_dispatcher
+Z1 w1716053400
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Score Dispatcher/Score_Dispatcher.vhd
+Z5 FC:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Score Dispatcher/Score_Dispatcher.vhd
+l0
+L4 1
+VBAIX?cC3^[ReV2ekN3VTb1
+!s100 <R^X0hGJTOR<W``kcO[BU3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1716053460
+!i10b 1
+Z8 !s108 1716053460.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Score Dispatcher/Score_Dispatcher.vhd|
+Z10 !s107 C:/Users/Miguel Portela/Desktop/LIC/Hardware/Serial Score Controller/Score Dispatcher/Score_Dispatcher.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 16 score_dispatcher 0 22 BAIX?cC3^[ReV2ekN3VTb1
+!i122 0
+l20
+L13 41
+VT6V^1d1h<bLMenS:lXZeK2
+!s100 >7eC@gz2gJD8HIc;ZQG5D2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Escore_dispatcher_tb
+Z13 w1716053294
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Score Dispatcher/Score_Dispatcher_tb.vhd
+Z15 FC:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Score Dispatcher/Score_Dispatcher_tb.vhd
+l0
+L4 1
+VNH[FHfOlIX5L:L;`@h:LN2
+!s100 h[lO6FE5Y<9RXGXRc?n940
+R6
+32
+Z16 !s110 1716053471
+!i10b 1
+Z17 !s108 1716053471.000000
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Score Dispatcher/Score_Dispatcher_tb.vhd|
+!s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Score Dispatcher/Score_Dispatcher_tb.vhd|
+!i113 1
+Z19 o-work work
+R12
+Abehavioral
+R2
+R3
+DEx4 work 19 score_dispatcher_tb 0 22 NH[FHfOlIX5L:L;`@h:LN2
+!i122 1
+l25
+L7 67
+V:d<N:mBoYdXaR?Ba<XVK11
+!s100 zm1fgbHSTKhBjI`FicCcU0
+R6
+32
+R16
+!i10b 1
+R17
+R18
+Z20 !s107 C:/Users/Miguel Portela/Desktop/LIC/TestBench/Serial Score Controller/Score Dispatcher/Score_Dispatcher_tb.vhd|
+!i113 1
+R19
+R12

@@ -1,0 +1,92 @@
+|OutputBuffer
+D[0] => OutputRegister:OutputRegister_U0.D[0]
+D[1] => OutputRegister:OutputRegister_U0.D[1]
+D[2] => OutputRegister:OutputRegister_U0.D[2]
+D[3] => OutputRegister:OutputRegister_U0.D[3]
+Load => BufferControl:BufferControl_U0.Load
+Reset => BufferControl:BufferControl_U0.Reset
+Reset => OutputRegister:OutputRegister_U0.Reset
+ACK => BufferControl:BufferControl_U0.ACK
+clk => BufferControl:BufferControl_U0.clk
+Q[0] << OutputRegister:OutputRegister_U0.Q[0]
+Q[1] << OutputRegister:OutputRegister_U0.Q[1]
+Q[2] << OutputRegister:OutputRegister_U0.Q[2]
+Q[3] << OutputRegister:OutputRegister_U0.Q[3]
+OBfree << BufferControl:BufferControl_U0.OBfree
+Dval << BufferControl:BufferControl_U0.Dval
+
+
+|OutputBuffer|BufferControl:BufferControl_U0
+Reset => CurrentState.ACLR
+clk => CurrentState.CLK
+Load => NextState.DATAB
+Load => GenerateNextState.IN0
+ACK => GenerateNextState.IN1
+OBfree <= CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+Wreg <= CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+Dval <= CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OutputBuffer|OutputRegister:OutputRegister_U0
+D[0] => OutputRegister_FFD:FFD_U3.D
+D[1] => OutputRegister_FFD:FFD_U2.D
+D[2] => OutputRegister_FFD:FFD_U1.D
+D[3] => OutputRegister_FFD:FFD_U0.D
+clk => OutputRegister_FFD:FFD_U0.clk
+clk => OutputRegister_FFD:FFD_U1.clk
+clk => OutputRegister_FFD:FFD_U2.clk
+clk => OutputRegister_FFD:FFD_U3.clk
+E => OutputRegister_FFD:FFD_U0.EN
+E => OutputRegister_FFD:FFD_U1.EN
+E => OutputRegister_FFD:FFD_U2.EN
+E => OutputRegister_FFD:FFD_U3.EN
+Reset => OutputRegister_FFD:FFD_U0.Reset
+Reset => OutputRegister_FFD:FFD_U1.Reset
+Reset => OutputRegister_FFD:FFD_U2.Reset
+Reset => OutputRegister_FFD:FFD_U3.Reset
+Q[0] <= OutputRegister_FFD:FFD_U3.Q
+Q[1] <= OutputRegister_FFD:FFD_U2.Q
+Q[2] <= OutputRegister_FFD:FFD_U1.Q
+Q[3] <= OutputRegister_FFD:FFD_U0.Q
+
+
+|OutputBuffer|OutputRegister:OutputRegister_U0|OutputRegister_FFD:FFD_U0
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OutputBuffer|OutputRegister:OutputRegister_U0|OutputRegister_FFD:FFD_U1
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OutputBuffer|OutputRegister:OutputRegister_U0|OutputRegister_FFD:FFD_U2
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OutputBuffer|OutputRegister:OutputRegister_U0|OutputRegister_FFD:FFD_U3
+clk => Q~reg0.CLK
+Reset => Q~reg0.ACLR
+Reset => Q.IN0
+Set => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
